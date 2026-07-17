@@ -1,0 +1,24 @@
+# OS / editor
+.DS_Store
+**/.DS_Store
+
+# tooling local (codus / claude, machine-specific)
+.claude/
+.codex/
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# dev artifacts (para cuando esto se convierta en el repo del hack)
+node_modules/
+.next/
+.vercel/
+dist/
+tsconfig.tsbuildinfo
+
+# datasets grandes: re-descargables, exceden limites de GitHub (CSV de 100MB+)
+# Como reconstruirlos: ver data-fallback/README.md (fuentes y conversion cp850 a UTF-8)
+data-fallback/*
+!data-fallback/README.md
