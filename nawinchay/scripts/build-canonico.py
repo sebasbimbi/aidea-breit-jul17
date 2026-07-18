@@ -107,21 +107,30 @@ def construir_era():
     por_cap = {}
     for it in items:
         por_cap.setdefault(it["capacidad"], []).append(it)
-    capacidades = [
-        {
+    # CIFRAS CONGELADAS: el promedio de la capacidad se calcula EXCLUYENDO los items
+    # declarados anomalos. Incluirlos mezcla "no sabemos" con "les fue mal" y produce
+    # la cifra prohibida de 40.9 en vez de 47.7 sobre 4 items.
+    capacidades = []
+    for cap, lista in sorted(por_cap.items()):
+        limpios = [i for i in lista if i["categoria"] == "normal"]
+        base = limpios or lista          # si TODOS son anomalos, no hay nada limpio que promediar
+        capacidades.append({
             "capacidad": cap,
             "n_items": len(lista),
+            "n_items_limpios": len(limpios),
             "items": sorted(i["item"] for i in lista),
-            "pct_promedio": round(sum(i["huaytara"]["pct"] for i in lista) / len(lista), 2),
-            "medible": len(lista) >= 3,
+            "items_excluidos": sorted(i["item"] for i in lista if i["categoria"] != "normal"),
+            # el que se muestra y se dice en voz alta
+            "pct_promedio": round(sum(i["huaytara"]["pct"] for i in base) / len(base), 2),
+            "pct_promedio_con_anomalos": round(sum(i["huaytara"]["pct"] for i in lista) / len(lista), 2),
+            "medible": len(limpios) >= 3,
             "advertencia": (
                 "item unico: no separa comportamiento del item del dominio de la capacidad"
                 if len(lista) == 1 else None
             ),
-            "contiene_item_anomalo": any(i["categoria"] in ("defecto_item", "concepcion_errada") for i in lista),
-        }
-        for cap, lista in sorted(por_cap.items())
-    ]
+            "sin_items_limpios": not limpios,
+            "contiene_item_anomalo": len(limpios) != len(lista),
+        })
 
     return {
         "fuente": "Evaluacion Regional de Estudiantes (ERA) Huancavelica 2025",

@@ -1,4 +1,5 @@
 import canonicoRaw from "@/data/canonico.json";
+import fixtureRaw from "@/data/fixture-diagnostico.json";
 import {
   ETIQUETA_CATEGORIA,
   COLOR_CATEGORIA,
@@ -9,6 +10,31 @@ import {
 const canonico = canonicoRaw as unknown as Canonico;
 const E = canonico.era;
 
+// El diagnostico se sirve desde un import estatico. El wow del pitch NUNCA
+// depende del wifi del local: mismo pixel en pantalla, cero latencia.
+type Diagnostico = { titulo: string; lectura: string; que_significa: string; que_hacer: string };
+const fixture = fixtureRaw as unknown as {
+  _meta: { proveedor: string; modelo: string };
+  item_3: Diagnostico;
+  item_9: Diagnostico;
+};
+const PROVEEDOR = "demo" as const;
+
+function BadgeProveedor() {
+  const estilo =
+    PROVEEDOR === "demo"
+      ? "border-sky-500/50 text-sky-300"
+      : "border-brand-green/50 text-brand-green";
+  return (
+    <span
+      className={`rounded border px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider ${estilo}`}
+      title={`Diagnostico precomputado con ${fixture._meta.modelo} via ${fixture._meta.proveedor}. Se sirve sin red.`}
+    >
+      {PROVEEDOR === "demo" ? "fixture · sin red" : "en vivo"}
+    </span>
+  );
+}
+
 const MAX = 100;
 const pos = (pct: number) => `${Math.min(100, Math.max(0, pct))}%`;
 
@@ -17,6 +43,12 @@ export default function Items() {
   const i9 = E.items.find((i) => i.item === 9)!;
   const anomalos = E.items.filter((i) => i.categoria !== "normal");
   const itemUnico = E.capacidades.filter((c) => c.n_items === 1);
+
+  // capacidad mas debil ENTRE LAS QUE CONSERVAN ITEMS LIMPIOS. Las que se quedan
+  // sin items limpios no son "las mas debiles": son las que no tienen medicion valida.
+  const masDebil = E.capacidades
+    .filter((c) => !(c as { sin_items_limpios?: boolean }).sin_items_limpios)
+    .sort((a, b) => a.pct_promedio - b.pct_promedio)[0];
 
   return (
     <main className="mx-auto max-w-6xl px-5 py-10">
@@ -146,24 +178,45 @@ export default function Items() {
               </div>
             </dl>
 
-            <p className="mt-4 text-xs leading-relaxed text-neutral-400">
-              {it.item === 3 ? (
-                <>
-                  Se mueve una centesima entre dos poblaciones que no comparten un solo estudiante.
-                  Un item defectuoso falla identico en todas partes; una brecha de aprendizaje varia.
-                  Sobrevive 3, 4 o 5 alternativas: no depende del supuesto del azar.
-                </>
-              ) : (
-                <>
-                  Se mueve {Math.abs(it.delta_pp).toFixed(2)} puntos entre poblaciones disjuntas, de modo
-                  que no es una propiedad limpia del item. Con 4 alternativas esta bajo el azar; con 5
-                  estaria justo en el azar y no afirmamos nada sobre el. No pudimos confirmar el numero
-                  de alternativas y por eso lo decimos asi.
-                </>
-              )}
-            </p>
+            {/* diagnostico precomputado, servido sin red */}
+            {(() => {
+              const d = it.item === 3 ? fixture.item_3 : fixture.item_9;
+              return (
+                <div className="mt-4 rounded border border-brand-outline bg-brand-surface p-3.5">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <p className="font-mono text-[10px] uppercase tracking-widest text-neutral-500">
+                      Diagnostico
+                    </p>
+                    <BadgeProveedor />
+                  </div>
+                  <p className="mt-2 text-sm font-medium text-white">{d.titulo}</p>
+                  <p className="mt-2 text-xs leading-relaxed text-neutral-400">{d.lectura}</p>
+                  <p className="mt-2 text-xs leading-relaxed text-neutral-400">{d.que_significa}</p>
+                  <p className="mt-2.5 border-t border-brand-outline pt-2.5 text-xs leading-relaxed text-brand-green">
+                    {d.que_hacer}
+                  </p>
+                </div>
+              );
+            })()}
           </article>
         ))}
+      </section>
+
+      {/* ── capacidad mas debil, con la cifra congelada ──────────────────── */}
+      <section className="mt-6 rounded-lg border border-brand-outline bg-brand-surface2 p-5">
+        <h2 className="font-display text-lg font-semibold text-white">Capacidad mas debil</h2>
+        <div className="mt-3 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+          <span className="font-display text-3xl font-semibold text-white">
+            {masDebil.pct_promedio.toFixed(1)}%
+          </span>
+          <span className="text-sm text-neutral-300">{masDebil.capacidad}</span>
+        </div>
+        <p className="mt-2 max-w-3xl text-xs leading-relaxed text-neutral-500">
+          Promedio sobre {masDebil.n_items_limpios} items, excluyendo el item{" "}
+          {masDebil.items_excluidos.join(", ")} por estar marcado como anomalo. Incluirlo daria{" "}
+          {masDebil.pct_promedio_con_anomalos.toFixed(1)}%, que mezcla no sabemos con les fue mal.
+          Un item cuya medicion esta en duda no puede bajar el promedio de una capacidad.
+        </p>
       </section>
 
       {/* ── capacidades de item unico ────────────────────────────────────── */}

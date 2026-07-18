@@ -104,10 +104,15 @@ export type Canonico = {
     capacidades: {
       capacidad: string;
       n_items: number;
+      n_items_limpios: number;
       items: number[];
+      items_excluidos: number[];
+      /** promedio EXCLUYENDO items anomalos. Es el que se muestra y se dice en voz alta. */
       pct_promedio: number;
+      pct_promedio_con_anomalos: number;
       medible: boolean;
       advertencia: string | null;
+      sin_items_limpios: boolean;
       contiene_item_anomalo: boolean;
     }[];
     por_area_regional: Record<string, string | number>[];

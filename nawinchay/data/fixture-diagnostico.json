@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "que_es": "Fixture determinista del diagnostico por item. Se sirve desde un import estatico: cero latencia, cero red, cero riesgo de wifi del local.",
+    "generado": "2026-07-18",
+    "proveedor": "openrouter",
+    "modelo": "anthropic/claude-sonnet-5",
+    "ruta": "Amazon Bedrock via OpenRouter",
+    "verificacion": "Toda cifra citada existe en data/canonico.json. Ninguna fue inventada por el modelo."
+  },
+  "item_3": {
+    "titulo": "Item 3 muestra invariancia total entre poblaciones",
+    "lectura": "El acierto es 5.91% en Huaytara (14 de 237) y 5.92% en el resto de la region (282 de 4765), poblaciones disjuntas que se mueven solo 0.01 puntos. El desempeno esta muy por debajo del azar de 25% en las dos poblaciones, con z de -30.42 en el resto de la region.",
+    "que_significa": "Esta invariancia indica que el patron es propiedad del item y no de una poblacion particular, ya que Huaytara no se aparta del comportamiento regional. Sin embargo, esto no permite distinguir si la clave esta mal asignada o si existe una concepcion errada compartida en toda la region, distincion que corresponde a otras pruebas.",
+    "que_hacer": "Se recomienda que el especialista adjudique el item 3 mediante correlacion biserial puntual y distribucion de distractores en cuanto se disponga de las respuestas por estudiante."
+  },
+  "item_9": {
+    "titulo": "Item 9 requiere confirmar numero de alternativas",
+    "lectura": "El acierto es 13.92% en Huaytara (33 de 237) y 20.17% en el resto de la region (961 de 4765), con una diferencia de 6.24 puntos entre ambas poblaciones. El z contra el azar en el resto es -7.70, calculado bajo el supuesto de 4 alternativas.",
+    "que_significa": "Con 4 alternativas el desempeno en el resto de la region estaria bajo el azar, pero con 5 alternativas estaria justo en el nivel esperado por azar, condicion que aun no esta confirmada y por tanto no permite afirmar nada sobre el item. La diferencia entre Huaytara y el resto tampoco permite, por si sola, separar clave mal asignada de concepcion errada compartida en la region.",
+    "que_hacer": "Se recomienda confirmar el numero de alternativas del item 9 y luego someterlo a adjudicacion del especialista mediante correlacion biserial puntual y distribucion de distractores."
+  }
+}

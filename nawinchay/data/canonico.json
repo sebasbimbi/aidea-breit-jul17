@@ -573,17 +573,24 @@
       {
         "capacidad": "Analiza datos e informacion",
         "n_items": 1,
+        "n_items_limpios": 0,
         "items": [
           3
         ],
+        "items_excluidos": [
+          3
+        ],
         "pct_promedio": 5.91,
+        "pct_promedio_con_anomalos": 5.91,
         "medible": false,
         "advertencia": "item unico: no separa comportamiento del item del dominio de la capacidad",
+        "sin_items_limpios": true,
         "contiene_item_anomalo": true
       },
       {
         "capacidad": "Comprende y usa conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
         "n_items": 5,
+        "n_items_limpios": 4,
         "items": [
           6,
           7,
@@ -591,83 +598,112 @@
           9,
           10
         ],
-        "pct_promedio": 40.93,
+        "items_excluidos": [
+          9
+        ],
+        "pct_promedio": 47.68,
+        "pct_promedio_con_anomalos": 40.93,
         "medible": true,
         "advertencia": null,
+        "sin_items_limpios": false,
         "contiene_item_anomalo": true
       },
       {
         "capacidad": "Determina una alternativa de solucion tecnologica",
         "n_items": 3,
+        "n_items_limpios": 3,
         "items": [
           12,
           14,
           16
         ],
+        "items_excluidos": [],
         "pct_promedio": 57.95,
+        "pct_promedio_con_anomalos": 57.95,
         "medible": true,
         "advertencia": null,
+        "sin_items_limpios": false,
         "contiene_item_anomalo": false
       },
       {
         "capacidad": "Disena estrategias para hacer indagacion",
         "n_items": 2,
+        "n_items_limpios": 2,
         "items": [
           4,
           20
         ],
+        "items_excluidos": [],
         "pct_promedio": 51.69,
+        "pct_promedio_con_anomalos": 51.69,
         "medible": false,
         "advertencia": null,
+        "sin_items_limpios": false,
         "contiene_item_anomalo": false
       },
       {
         "capacidad": "Evalua las implicancias del saber y del quehacer cientifico y tecnologico",
         "n_items": 1,
+        "n_items_limpios": 1,
         "items": [
           11
         ],
+        "items_excluidos": [],
         "pct_promedio": 65.4,
+        "pct_promedio_con_anomalos": 65.4,
         "medible": false,
         "advertencia": "item unico: no separa comportamiento del item del dominio de la capacidad",
+        "sin_items_limpios": false,
         "contiene_item_anomalo": false
       },
       {
         "capacidad": "Evalua y comunica el proceso y resultados de su indagacion",
         "n_items": 1,
+        "n_items_limpios": 1,
         "items": [
           5
         ],
+        "items_excluidos": [],
         "pct_promedio": 52.74,
+        "pct_promedio_con_anomalos": 52.74,
         "medible": false,
         "advertencia": "item unico: no separa comportamiento del item del dominio de la capacidad",
+        "sin_items_limpios": false,
         "contiene_item_anomalo": false
       },
       {
         "capacidad": "Implementa y valida la alternativa de solucion tecnologica",
         "n_items": 3,
+        "n_items_limpios": 3,
         "items": [
           13,
           15,
           17
         ],
+        "items_excluidos": [],
         "pct_promedio": 64.14,
+        "pct_promedio_con_anomalos": 64.14,
         "medible": true,
         "advertencia": null,
+        "sin_items_limpios": false,
         "contiene_item_anomalo": false
       },
       {
         "capacidad": "Problematiza situaciones",
         "n_items": 4,
+        "n_items_limpios": 4,
         "items": [
           1,
           2,
           18,
           19
         ],
+        "items_excluidos": [],
         "pct_promedio": 65.61,
+        "pct_promedio_con_anomalos": 65.61,
         "medible": true,
         "advertencia": null,
+        "sin_items_limpios": false,
         "contiene_item_anomalo": false
       }
     ],
