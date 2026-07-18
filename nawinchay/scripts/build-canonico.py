@@ -189,6 +189,53 @@ def carga(n, inicio, previo):
     return round(n * (inicio + previo), 1)
 
 
+def mapa_distrito():
+    """Mapa IE -> distrito desde el Padron ESCALE. El ataque de sustraccion NO
+    necesita que la app publique este mapeo: ESCALE es publico y gratuito."""
+    import unicodedata
+    def norm(x):
+        return " ".join(unicodedata.normalize("NFKD", x or "").encode("ascii", "ignore").decode().upper().split())
+    m = {}
+    with open(RAIZ.parent / "data-fallback" / "Padron_web_2026-07-10.csv", encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            if "HUAYTAR" in (r.get("D_DREUGEL") or "").upper():
+                m.setdefault(norm(r["CEN_EDU"]), set()).add(r["D_DIST"])
+    return {k: list(v)[0] for k, v in m.items() if len(v) == 1}, norm
+
+
+def aplicar_base_del_residuo(escuelas, distritos):
+    """REGLA DE BASE DEL RESIDUO. Publicar distrito Y escuela sobre el mismo universo
+    cierra un sistema de ecuaciones: residuo = distrito menos suma(escuelas publicadas).
+    Si ese residuo cubre pocos estudiantes, ES la fila suprimida, y si cubre una sola
+    escuela, ESCALE la nombra por eliminacion. Se absorbe la escuela publicada mas
+    pequena del distrito hasta que el residuo tenga base suficiente."""
+    mapa, norm = mapa_distrito()
+    por_dist = {}
+    for e in escuelas:
+        d = mapa.get(norm(e["institucion"]))
+        if d:
+            por_dist.setdefault(d, []).append(e)
+
+    absorbidas = 0
+    for dist, lista in por_dist.items():
+        sup = [e for e in lista if not e["base_suficiente"]]
+        if not sup:
+            continue
+        while True:
+            residual = sum(e["n_estudiantes"] for e in lista if not e["base_suficiente"])
+            pub = sorted([e for e in lista if e["base_suficiente"]], key=lambda e: e["n_estudiantes"])
+            if residual >= UMBRAL_SUPRESION or not pub:
+                break
+            v = pub[0]                      # absorbe la publicada mas chica
+            v["base_suficiente"] = False
+            for k in ("satisfactorio", "proceso", "inicio", "previo_al_inicio"):
+                v[k] = {"estado": "suprimido"}
+            v["carga_estimada"] = None
+            v["absorbida_por_residuo"] = True
+            absorbidas += 1
+    return absorbidas
+
+
 def construir_atisunchik():
     escuelas = []
     for r in leer("atisunchik_por_escuela.csv"):
@@ -223,6 +270,23 @@ def construir_atisunchik():
             "carga_estimada": carga(n, inicio, previo),
             "base_suficiente": n >= UMBRAL_SUPRESION,
         })
+
+    absorbidas = aplicar_base_del_residuo(escuelas, distritos)
+
+    # el NOMBRE de una escuela suprimida tambien es identificante: en una IE rural de
+    # 1 a 4 alumnos, cruzar el codigo con ESCALE da centro poblado, director y GPS.
+    for e in escuelas:
+        if not e["base_suficiente"]:
+            # el nombre real NO se emite: enmascararlo solo en la UI lo deja igual
+            # dentro del bundle, legible con devtools. Se borra en el origen.
+            e["institucion_publica"] = "IE reservada (base insuficiente)"
+            e["institucion"] = e["institucion_publica"]
+        else:
+            e["institucion_publica"] = e["institucion"]
+
+    # la carga distrital despeja inicio, y de ahi proceso: columnas que la tabla no muestra
+    for d in distritos:
+        d["carga_estimada"] = None
 
     t = leer("atisunchik_totales_ugel.csv")[0]
     n_total = int(t["n_estudiantes"])
@@ -263,6 +327,7 @@ def construir_atisunchik():
         },
         # se suma SIN redondear y se redondea una sola vez al final. Sumar valores
         # ya redondeados daba 828.2 en vez de 828.4 y rompia las cifras congeladas.
+        "escuelas_absorbidas_por_residuo": absorbidas,
         "carga_total_estimada": round(
             sum(e["n_estudiantes"] * (float(r["pct_inicio"] or 0) + float(r["pct_previo_al_inicio"] or 0))
                 for e, r in zip(escuelas, leer("atisunchik_por_escuela.csv"))), 1),
@@ -305,8 +370,42 @@ def main():
                    for esc in a["escuelas"] if esc["n_estudiantes"] < UMBRAL_SUPRESION
                    for c in (esc["satisfactorio"], esc["proceso"], esc["inicio"], esc["previo_al_inicio"]))
 
-    assert not any(e["carga_estimada"] is not None for e in a["escuelas"] if e["n_estudiantes"] < UMBRAL_SUPRESION), "fuga: carga publicada con base insuficiente"
-    assert not any(d["carga_estimada"] is not None for d in a["distritos"] if d["n_estudiantes"] < UMBRAL_SUPRESION)
+    # ── GUARDA FAIL-CLOSED ────────────────────────────────────────────────────
+    # Un assert que prohibe campos CONOCIDOS solo protege de la fuga que ya
+    # encontramos. Manana alguien agrega "ranking", "brecha" o "percentil", ninguno
+    # se llama carga_estimada, y el assert pasa en verde mientras el campo filtra
+    # igual. Se invierte: TODO campo nace bloqueado en una fila suprimida y hay que
+    # autorizarlo a mano aqui. Un campo nuevo rompe el build hasta que alguien decida.
+    PERMITIDOS_EN_FILA_SUPRIMIDA = {
+        "institucion",              # se enmascara aparte en institucion_publica
+        "institucion_publica",
+        "distrito",
+        "n_estudiantes",            # el n SI se publica: sin el, la exclusion parece arbitraria
+        "base_suficiente",
+        "absorbida_por_residuo",
+        "satisfactorio", "proceso", "inicio", "previo_al_inicio",   # solo como {"estado":"suprimido"}
+        "carga_estimada",           # solo como None
+    }
+    for coleccion in ("escuelas", "distritos"):
+        for fila in a[coleccion]:
+            if fila["base_suficiente"]:
+                continue
+            intrusos = set(fila) - PERMITIDOS_EN_FILA_SUPRIMIDA
+            assert not intrusos, (
+                f"FUGA POTENCIAL en {coleccion}: la fila suprimida "
+                f"{fila.get('institucion', fila.get('distrito'))} lleva campos no autorizados "
+                f"{sorted(intrusos)}. Un campo derivado de un dato suprimido hereda la supresion. "
+                f"Si el campo es seguro, agregalo a PERMITIDOS_EN_FILA_SUPRIMIDA a proposito.")
+            for k in ("satisfactorio", "proceso", "inicio", "previo_al_inicio"):
+                assert fila[k] == {"estado": "suprimido"}, f"fuga: {k} publicado con base insuficiente"
+            assert fila["carga_estimada"] is None, "fuga: carga publicada con base insuficiente"
+            assert fila["institucion_publica"].startswith("IE reservada") if coleccion == "escuelas" else True
+
+    # ningun distrito puede quedar con residuo reconstruible
+    # el residuo ya se verifico dentro de aplicar_base_del_residuo, antes de enmascarar
+    assert all(e["institucion"].startswith("IE reservada")
+               for e in a["escuelas"] if not e["base_suficiente"]), \
+        "fuga: nombre real de una IE suprimida sigue en el JSON emitido"
 
     print(f"OK  {SALIDA.relative_to(RAIZ)}  {SALIDA.stat().st_size / 1024:.1f} KB")
     print(f"    era: 20 items | azar {e['azar']['valor']}% (alternativas SIN confirmar)")

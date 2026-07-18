@@ -90,7 +90,17 @@ export type FilaAtisunchik = {
   base_suficiente: boolean;
 };
 
-export type Escuela = FilaAtisunchik & { institucion: string };
+export type Escuela = FilaAtisunchik & {
+  /** nombre real. NO renderizar cuando base_suficiente es false. */
+  institucion: string;
+  /**
+   * El nombre que la UI puede pintar. En una IE rural de 1 a 4 alumnos el codigo
+   * cruza con el Padron ESCALE publico y entrega centro poblado, director y GPS,
+   * asi que el nombre de una escuela suprimida tambien es identificante.
+   */
+  institucion_publica: string;
+  absorbida_por_residuo?: boolean;
+};
 export type Distrito = FilaAtisunchik & { distrito: string };
 
 export type Canonico = {

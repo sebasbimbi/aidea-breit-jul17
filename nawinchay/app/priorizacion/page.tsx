@@ -26,7 +26,7 @@ function descargarCsv(filas: (Escuela | Distrito)[], nivel: Nivel) {
     "estado_base",
   ];
   const cuerpo = filas.map((f) => {
-    const nombre = "distrito" in f ? f.distrito : f.institucion;
+    const nombre = "distrito" in f ? f.distrito : f.institucion_publica;
     // el CSV respeta la supresion: base insuficiente no exporta porcentaje
     const sat = esPublicable(f.satisfactorio) ? f.satisfactorio.pct.toFixed(1) : "";
     const prev = esPublicable(f.previo_al_inicio) ? f.previo_al_inicio.pct.toFixed(1) : "";
@@ -169,7 +169,7 @@ export default function Priorizacion() {
           </thead>
           <tbody>
             {filas.map((f, i) => {
-              const nombre = "distrito" in f ? f.distrito : f.institucion;
+              const nombre = "distrito" in f ? f.distrito : f.institucion_publica;
               return (
                 <tr
                   key={`${nombre}-${i}`}

@@ -768,324 +768,13 @@
       "escuelas_n_igual_1": 22,
       "escuelas_bajo_5": 58,
       "escuelas_bajo_10": 93,
-      "escuelas_publicables": 83,
-      "estudiantes_en_publicables": 1394,
-      "pct_estudiantes_conservados": 92.4
+      "escuelas_publicables": 79,
+      "estudiantes_en_publicables": 1357,
+      "pct_estudiantes_conservados": 90.0
     },
+    "escuelas_absorbidas_por_residuo": 4,
     "carga_total_estimada": 828.4,
     "distritos": [
-      {
-        "distrito": "PILPICHACA",
-        "n_estudiantes": 465,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 6.29,
-          "n": 465
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 32.31,
-          "n": 465
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 45.22,
-          "n": 465
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 16.18,
-          "n": 465
-        },
-        "carga_estimada": 285.5,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "HUAYTARA",
-        "n_estudiantes": 211,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 13.16,
-          "n": 211
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 38.28,
-          "n": 211
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 34.45,
-          "n": 211
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 14.11,
-          "n": 211
-        },
-        "carga_estimada": 102.5,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "SAN ANTONIO DE CUSICANCHA",
-        "n_estudiantes": 153,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 12.58,
-          "n": 153
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 35.93,
-          "n": 153
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 38.91,
-          "n": 153
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 12.58,
-          "n": 153
-        },
-        "carga_estimada": 78.8,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "SANTIAGO DE CHOCORVOS",
-        "n_estudiantes": 135,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 10.19,
-          "n": 135
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 38.49,
-          "n": 135
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 33.02,
-          "n": 135
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 18.3,
-          "n": 135
-        },
-        "carga_estimada": 69.3,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "SAN FRANCISCO DE SANGAYAICO",
-        "n_estudiantes": 88,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 6.1,
-          "n": 88
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 28.49,
-          "n": 88
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 50.58,
-          "n": 88
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 14.83,
-          "n": 88
-        },
-        "carga_estimada": 57.6,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "OCOYO",
-        "n_estudiantes": 77,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 9.74,
-          "n": 77
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 31.82,
-          "n": 77
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 37.34,
-          "n": 77
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 21.1,
-          "n": 77
-        },
-        "carga_estimada": 45.0,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "LARAMARCA",
-        "n_estudiantes": 49,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 4.12,
-          "n": 49
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 27.84,
-          "n": 49
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 42.27,
-          "n": 49
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 25.77,
-          "n": 49
-        },
-        "carga_estimada": 33.3,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "QUERCO",
-        "n_estudiantes": 50,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 5.5,
-          "n": 50
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 34.0,
-          "n": 50
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 44.5,
-          "n": 50
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 16.0,
-          "n": 50
-        },
-        "carga_estimada": 30.2,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "CORDOVA",
-        "n_estudiantes": 48,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 14.06,
-          "n": 48
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 34.38,
-          "n": 48
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 30.73,
-          "n": 48
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 20.83,
-          "n": 48
-        },
-        "carga_estimada": 24.8,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "QUITO-ARMA",
-        "n_estudiantes": 56,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 15.25,
-          "n": 56
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 41.7,
-          "n": 56
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 36.77,
-          "n": 56
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 6.28,
-          "n": 56
-        },
-        "carga_estimada": 24.1,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "SANTO DOMINGO DE CAPILLAS",
-        "n_estudiantes": 45,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 16.09,
-          "n": 45
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 32.76,
-          "n": 45
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 41.38,
-          "n": 45
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 9.77,
-          "n": 45
-        },
-        "carga_estimada": 23.0,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "AYAVI",
-        "n_estudiantes": 34,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 10.29,
-          "n": 34
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 35.29,
-          "n": 34
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 46.32,
-          "n": 34
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 8.09,
-          "n": 34
-        },
-        "carga_estimada": 18.5,
-        "base_suficiente": true
-      },
       {
         "distrito": "TAMBO",
         "n_estudiantes": 37,
@@ -1109,33 +798,7 @@
           "pct": 4.05,
           "n": 37
         },
-        "carga_estimada": 12.5,
-        "base_suficiente": true
-      },
-      {
-        "distrito": "SAN ISIDRO",
-        "n_estudiantes": 29,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 8.62,
-          "n": 29
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 54.31,
-          "n": 29
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 34.48,
-          "n": 29
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 2.59,
-          "n": 29
-        },
-        "carga_estimada": 10.8,
+        "carga_estimada": null,
         "base_suficiente": true
       },
       {
@@ -1161,7 +824,7 @@
           "pct": 10.94,
           "n": 16
         },
-        "carga_estimada": 5.8,
+        "carga_estimada": null,
         "base_suficiente": true
       },
       {
@@ -1187,7 +850,345 @@
           "pct": 5.08,
           "n": 15
         },
-        "carga_estimada": 5.8,
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SANTO DOMINGO DE CAPILLAS",
+        "n_estudiantes": 45,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 16.09,
+          "n": 45
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 32.76,
+          "n": 45
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 41.38,
+          "n": 45
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 9.77,
+          "n": 45
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "QUITO-ARMA",
+        "n_estudiantes": 56,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 15.25,
+          "n": 56
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 41.7,
+          "n": 56
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 36.77,
+          "n": 56
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 6.28,
+          "n": 56
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "CORDOVA",
+        "n_estudiantes": 48,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 14.06,
+          "n": 48
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 34.38,
+          "n": 48
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 30.73,
+          "n": 48
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 20.83,
+          "n": 48
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "HUAYTARA",
+        "n_estudiantes": 211,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 13.16,
+          "n": 211
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.28,
+          "n": 211
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 34.45,
+          "n": 211
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 14.11,
+          "n": 211
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SAN ANTONIO DE CUSICANCHA",
+        "n_estudiantes": 153,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 12.58,
+          "n": 153
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 35.93,
+          "n": 153
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 38.91,
+          "n": 153
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 12.58,
+          "n": 153
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "AYAVI",
+        "n_estudiantes": 34,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.29,
+          "n": 34
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 35.29,
+          "n": 34
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 46.32,
+          "n": 34
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 8.09,
+          "n": 34
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SANTIAGO DE CHOCORVOS",
+        "n_estudiantes": 135,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.19,
+          "n": 135
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.49,
+          "n": 135
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 33.02,
+          "n": 135
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 18.3,
+          "n": 135
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "OCOYO",
+        "n_estudiantes": 77,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 9.74,
+          "n": 77
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 31.82,
+          "n": 77
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 37.34,
+          "n": 77
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 21.1,
+          "n": 77
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SAN ISIDRO",
+        "n_estudiantes": 29,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 8.62,
+          "n": 29
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 54.31,
+          "n": 29
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 34.48,
+          "n": 29
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 2.59,
+          "n": 29
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "PILPICHACA",
+        "n_estudiantes": 465,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 6.29,
+          "n": 465
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 32.31,
+          "n": 465
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 45.22,
+          "n": 465
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 16.18,
+          "n": 465
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SAN FRANCISCO DE SANGAYAICO",
+        "n_estudiantes": 88,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 6.1,
+          "n": 88
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 28.49,
+          "n": 88
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.58,
+          "n": 88
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 14.83,
+          "n": 88
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "QUERCO",
+        "n_estudiantes": 50,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 5.5,
+          "n": 50
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 34.0,
+          "n": 50
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 44.5,
+          "n": 50
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 16.0,
+          "n": 50
+        },
+        "carga_estimada": null,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "LARAMARCA",
+        "n_estudiantes": 49,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 4.12,
+          "n": 49
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 27.84,
+          "n": 49
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 42.27,
+          "n": 49
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 25.77,
+          "n": 49
+        },
+        "carga_estimada": null,
         "base_suficiente": true
       }
     ],
@@ -1216,7 +1217,8 @@
           "n": 91
         },
         "carga_estimada": 65.9,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "SAN JUAN BAUTISTA"
       },
       {
         "institucion": "JOSE CARLOS MARIATEGUI",
@@ -1242,7 +1244,8 @@
           "n": 78
         },
         "carga_estimada": 64.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "JOSE CARLOS MARIATEGUI"
       },
       {
         "institucion": "22033",
@@ -1268,7 +1271,8 @@
           "n": 82
         },
         "carga_estimada": 39.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22033"
       },
       {
         "institucion": "22023",
@@ -1294,7 +1298,8 @@
           "n": 112
         },
         "carga_estimada": 34.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22023"
       },
       {
         "institucion": "PACOMARCA",
@@ -1320,7 +1325,8 @@
           "n": 32
         },
         "carga_estimada": 29.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "PACOMARCA"
       },
       {
         "institucion": "PELAPATA",
@@ -1346,7 +1352,8 @@
           "n": 36
         },
         "carga_estimada": 28.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "PELAPATA"
       },
       {
         "institucion": "TECNICO AGROPECUARIO ARTESANAL",
@@ -1372,7 +1379,8 @@
           "n": 30
         },
         "carga_estimada": 25.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "TECNICO AGROPECUARIO ARTESANAL"
       },
       {
         "institucion": "SAN FRANCISCO",
@@ -1398,7 +1406,8 @@
           "n": 29
         },
         "carga_estimada": 23.6,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "SAN FRANCISCO"
       },
       {
         "institucion": "JOSE DE SAN MARTIN",
@@ -1424,7 +1433,8 @@
           "n": 25
         },
         "carga_estimada": 22.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "JOSE DE SAN MARTIN"
       },
       {
         "institucion": "22504",
@@ -1450,7 +1460,8 @@
           "n": 29
         },
         "carga_estimada": 20.9,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22504"
       },
       {
         "institucion": "MANUEL GONZALES PRADA",
@@ -1476,33 +1487,8 @@
           "n": 31
         },
         "carga_estimada": 20.2,
-        "base_suficiente": true
-      },
-      {
-        "institucion": "INMACULADA CONCEPCION",
-        "n_estudiantes": 21,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 0.0,
-          "n": 21
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 10.71,
-          "n": 21
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 50.0,
-          "n": 21
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 39.29,
-          "n": 21
-        },
-        "carga_estimada": 18.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "MANUEL GONZALES PRADA"
       },
       {
         "institucion": "22595",
@@ -1528,7 +1514,8 @@
           "n": 28
         },
         "carga_estimada": 17.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22595"
       },
       {
         "institucion": "SAN FRANCISCO DE ASIS",
@@ -1554,7 +1541,8 @@
           "n": 20
         },
         "carga_estimada": 16.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "SAN FRANCISCO DE ASIS"
       },
       {
         "institucion": "22119",
@@ -1580,7 +1568,8 @@
           "n": 26
         },
         "carga_estimada": 15.7,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22119"
       },
       {
         "institucion": "22153",
@@ -1606,7 +1595,8 @@
           "n": 26
         },
         "carga_estimada": 14.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22153"
       },
       {
         "institucion": "22586",
@@ -1632,7 +1622,8 @@
           "n": 17
         },
         "carga_estimada": 14.3,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22586"
       },
       {
         "institucion": "SAN FELIPE",
@@ -1658,7 +1649,8 @@
           "n": 15
         },
         "carga_estimada": 12.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "SAN FELIPE"
       },
       {
         "institucion": "22159",
@@ -1684,7 +1676,8 @@
           "n": 24
         },
         "carga_estimada": 12.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22159"
       },
       {
         "institucion": "JUAN PABLO VIZCARDO Y GUZMAN",
@@ -1710,7 +1703,8 @@
           "n": 18
         },
         "carga_estimada": 11.7,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "JUAN PABLO VIZCARDO Y GUZMAN"
       },
       {
         "institucion": "INGAHUASI",
@@ -1736,7 +1730,8 @@
           "n": 16
         },
         "carga_estimada": 11.6,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "INGAHUASI"
       },
       {
         "institucion": "22122",
@@ -1762,7 +1757,8 @@
           "n": 16
         },
         "carga_estimada": 11.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22122"
       },
       {
         "institucion": "22149",
@@ -1788,7 +1784,8 @@
           "n": 19
         },
         "carga_estimada": 11.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22149"
       },
       {
         "institucion": "PEDRO PABLO ATUSPARIA",
@@ -1814,7 +1811,8 @@
           "n": 17
         },
         "carga_estimada": 10.9,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "PEDRO PABLO ATUSPARIA"
       },
       {
         "institucion": "SANTA ROSA",
@@ -1840,7 +1838,8 @@
           "n": 12
         },
         "carga_estimada": 10.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "SANTA ROSA"
       },
       {
         "institucion": "MIGUEL GRAU SEMINARIO",
@@ -1866,7 +1865,8 @@
           "n": 14
         },
         "carga_estimada": 9.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "MIGUEL GRAU SEMINARIO"
       },
       {
         "institucion": "NINO JESUS",
@@ -1892,7 +1892,8 @@
           "n": 16
         },
         "carga_estimada": 9.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "NINO JESUS"
       },
       {
         "institucion": "ELEODORO BELLIDO BRAVO",
@@ -1918,7 +1919,8 @@
           "n": 13
         },
         "carga_estimada": 9.4,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "ELEODORO BELLIDO BRAVO"
       },
       {
         "institucion": "ANDRES AVELINO CACERES",
@@ -1944,7 +1946,8 @@
           "n": 10
         },
         "carga_estimada": 9.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "ANDRES AVELINO CACERES"
       },
       {
         "institucion": "22087",
@@ -1970,7 +1973,8 @@
           "n": 25
         },
         "carga_estimada": 7.9,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22087"
       },
       {
         "institucion": "22223",
@@ -1996,7 +2000,8 @@
           "n": 15
         },
         "carga_estimada": 7.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22223"
       },
       {
         "institucion": "22085",
@@ -2022,7 +2027,8 @@
           "n": 13
         },
         "carga_estimada": 7.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22085"
       },
       {
         "institucion": "22619",
@@ -2048,7 +2054,8 @@
           "n": 8
         },
         "carga_estimada": 7.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22619"
       },
       {
         "institucion": "CESAR VALLEJO",
@@ -2074,7 +2081,8 @@
           "n": 9
         },
         "carga_estimada": 7.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "CESAR VALLEJO"
       },
       {
         "institucion": "22184 HERMINIA SANTE HUAROTO",
@@ -2100,7 +2108,8 @@
           "n": 15
         },
         "carga_estimada": 6.7,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22184 HERMINIA SANTE HUAROTO"
       },
       {
         "institucion": "22191",
@@ -2126,7 +2135,8 @@
           "n": 11
         },
         "carga_estimada": 6.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22191"
       },
       {
         "institucion": "22217",
@@ -2152,7 +2162,8 @@
           "n": 7
         },
         "carga_estimada": 6.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22217"
       },
       {
         "institucion": "36607",
@@ -2178,7 +2189,8 @@
           "n": 15
         },
         "carga_estimada": 5.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "36607"
       },
       {
         "institucion": "LIBERTADOR SIMON BOLIVAR",
@@ -2204,7 +2216,8 @@
           "n": 11
         },
         "carga_estimada": 5.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "LIBERTADOR SIMON BOLIVAR"
       },
       {
         "institucion": "JOSE MARIA ARGUEDAS",
@@ -2230,7 +2243,8 @@
           "n": 12
         },
         "carga_estimada": 5.7,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "JOSE MARIA ARGUEDAS"
       },
       {
         "institucion": "22164",
@@ -2256,7 +2270,8 @@
           "n": 20
         },
         "carga_estimada": 5.4,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22164"
       },
       {
         "institucion": "22615",
@@ -2282,7 +2297,8 @@
           "n": 15
         },
         "carga_estimada": 5.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22615"
       },
       {
         "institucion": "22169",
@@ -2308,7 +2324,8 @@
           "n": 10
         },
         "carga_estimada": 5.1,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22169"
       },
       {
         "institucion": "22157",
@@ -2334,7 +2351,8 @@
           "n": 20
         },
         "carga_estimada": 4.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22157"
       },
       {
         "institucion": "22127",
@@ -2360,7 +2378,8 @@
           "n": 12
         },
         "carga_estimada": 4.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22127"
       },
       {
         "institucion": "MARCAS PAMPAPUQUIO",
@@ -2386,7 +2405,8 @@
           "n": 6
         },
         "carga_estimada": 4.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "MARCAS PAMPAPUQUIO"
       },
       {
         "institucion": "APOSTOL SANTIAGO",
@@ -2412,7 +2432,8 @@
           "n": 7
         },
         "carga_estimada": 4.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "APOSTOL SANTIAGO"
       },
       {
         "institucion": "22034",
@@ -2438,7 +2459,8 @@
           "n": 10
         },
         "carga_estimada": 4.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22034"
       },
       {
         "institucion": "SANTA TERESITA",
@@ -2464,7 +2486,8 @@
           "n": 7
         },
         "carga_estimada": 4.1,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "SANTA TERESITA"
       },
       {
         "institucion": "22569",
@@ -2490,7 +2513,8 @@
           "n": 7
         },
         "carga_estimada": 4.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22569"
       },
       {
         "institucion": "22638",
@@ -2516,7 +2540,8 @@
           "n": 7
         },
         "carga_estimada": 4.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22638"
       },
       {
         "institucion": "22166",
@@ -2542,7 +2567,8 @@
           "n": 12
         },
         "carga_estimada": 3.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22166"
       },
       {
         "institucion": "CELESTINO MANCHEGO MUNOZ",
@@ -2568,7 +2594,8 @@
           "n": 6
         },
         "carga_estimada": 3.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "CELESTINO MANCHEGO MUNOZ"
       },
       {
         "institucion": "SANTA ROSA DE ACORA",
@@ -2594,7 +2621,8 @@
           "n": 5
         },
         "carga_estimada": 3.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "SANTA ROSA DE ACORA"
       },
       {
         "institucion": "22118",
@@ -2620,7 +2648,8 @@
           "n": 13
         },
         "carga_estimada": 3.7,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22118"
       },
       {
         "institucion": "22018",
@@ -2646,7 +2675,8 @@
           "n": 8
         },
         "carga_estimada": 3.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22018"
       },
       {
         "institucion": "22614",
@@ -2672,7 +2702,8 @@
           "n": 9
         },
         "carga_estimada": 3.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22614"
       },
       {
         "institucion": "22490",
@@ -2698,7 +2729,8 @@
           "n": 6
         },
         "carga_estimada": 3.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22490"
       },
       {
         "institucion": "22165",
@@ -2724,7 +2756,8 @@
           "n": 14
         },
         "carga_estimada": 2.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22165"
       },
       {
         "institucion": "22630",
@@ -2750,7 +2783,8 @@
           "n": 8
         },
         "carga_estimada": 2.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22630"
       },
       {
         "institucion": "22004",
@@ -2776,7 +2810,8 @@
           "n": 6
         },
         "carga_estimada": 2.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22004"
       },
       {
         "institucion": "36541",
@@ -2802,7 +2837,8 @@
           "n": 6
         },
         "carga_estimada": 2.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "36541"
       },
       {
         "institucion": "36597",
@@ -2828,7 +2864,8 @@
           "n": 6
         },
         "carga_estimada": 2.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "36597"
       },
       {
         "institucion": "22168",
@@ -2854,7 +2891,8 @@
           "n": 6
         },
         "carga_estimada": 2.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22168"
       },
       {
         "institucion": "22503",
@@ -2880,7 +2918,8 @@
           "n": 12
         },
         "carga_estimada": 2.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22503"
       },
       {
         "institucion": "22211",
@@ -2906,7 +2945,8 @@
           "n": 5
         },
         "carga_estimada": 2.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22211"
       },
       {
         "institucion": "36536",
@@ -2932,33 +2972,8 @@
           "n": 5
         },
         "carga_estimada": 2.5,
-        "base_suficiente": true
-      },
-      {
-        "institucion": "22558",
-        "n_estudiantes": 5,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 10.0,
-          "n": 5
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 45.0,
-          "n": 5
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 40.0,
-          "n": 5
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 5.0,
-          "n": 5
-        },
-        "carga_estimada": 2.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "36536"
       },
       {
         "institucion": "22609",
@@ -2984,7 +2999,8 @@
           "n": 7
         },
         "carga_estimada": 2.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22609"
       },
       {
         "institucion": "22029",
@@ -3010,7 +3026,8 @@
           "n": 8
         },
         "carga_estimada": 1.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22029"
       },
       {
         "institucion": "22597",
@@ -3036,7 +3053,8 @@
           "n": 10
         },
         "carga_estimada": 1.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22597"
       },
       {
         "institucion": "22624",
@@ -3062,7 +3080,8 @@
           "n": 6
         },
         "carga_estimada": 1.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22624"
       },
       {
         "institucion": "36540",
@@ -3088,33 +3107,8 @@
           "n": 6
         },
         "carga_estimada": 1.7,
-        "base_suficiente": true
-      },
-      {
-        "institucion": "22151",
-        "n_estudiantes": 6,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 62.5,
-          "n": 6
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 12.5,
-          "n": 6
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 25.0,
-          "n": 6
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 0.0,
-          "n": 6
-        },
-        "carga_estimada": 1.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "36540"
       },
       {
         "institucion": "22181",
@@ -3140,7 +3134,8 @@
           "n": 7
         },
         "carga_estimada": 1.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22181"
       },
       {
         "institucion": "22202",
@@ -3166,7 +3161,8 @@
           "n": 5
         },
         "carga_estimada": 1.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22202"
       },
       {
         "institucion": "22224",
@@ -3192,7 +3188,8 @@
           "n": 5
         },
         "carga_estimada": 1.2,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22224"
       },
       {
         "institucion": "22648",
@@ -3218,7 +3215,8 @@
           "n": 7
         },
         "carga_estimada": 0.8,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22648"
       },
       {
         "institucion": "36599",
@@ -3244,36 +3242,11 @@
           "n": 6
         },
         "carga_estimada": 0.5,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "36599"
       },
       {
-        "institucion": "22193",
-        "n_estudiantes": 5,
-        "satisfactorio": {
-          "estado": "publicado",
-          "pct": 50.0,
-          "n": 5
-        },
-        "proceso": {
-          "estado": "publicado",
-          "pct": 45.0,
-          "n": 5
-        },
-        "inicio": {
-          "estado": "publicado",
-          "pct": 5.0,
-          "n": 5
-        },
-        "previo_al_inicio": {
-          "estado": "publicado",
-          "pct": 0.0,
-          "n": 5
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": true
-      },
-      {
-        "institucion": "22143",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3288,10 +3261,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22652",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3306,10 +3280,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36579",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3324,7 +3299,8 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
         "institucion": "22141",
@@ -3350,7 +3326,28 @@
           "n": 5
         },
         "carga_estimada": 0.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22141"
+      },
+      {
+        "institucion": "IE reservada (base insuficiente)",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false,
+        "absorbida_por_residuo": true,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
         "institucion": "22550",
@@ -3376,10 +3373,11 @@
           "n": 6
         },
         "carga_estimada": 0.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22550"
       },
       {
-        "institucion": "36809",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3394,7 +3392,8 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
         "institucion": "22048",
@@ -3420,10 +3419,11 @@
           "n": 8
         },
         "carga_estimada": 0.0,
-        "base_suficiente": true
+        "base_suficiente": true,
+        "institucion_publica": "22048"
       },
       {
-        "institucion": "22173",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3438,10 +3438,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22186",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3456,10 +3457,31 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22203",
+        "institucion": "IE reservada (base insuficiente)",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false,
+        "absorbida_por_residuo": true,
+        "institucion_publica": "IE reservada (base insuficiente)"
+      },
+      {
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3474,10 +3496,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36550",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3492,10 +3515,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22129",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3510,10 +3534,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22220",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3528,10 +3553,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22060",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3546,10 +3572,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22200",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3564,10 +3591,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22160",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 4,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3582,10 +3610,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22140",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3600,10 +3629,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22187",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3618,10 +3648,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22188",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3636,10 +3667,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22213",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3654,10 +3686,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22563",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3672,10 +3705,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22589",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3690,10 +3724,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22591",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3708,10 +3743,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22633",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3726,10 +3762,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22651",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3744,10 +3781,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36805",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3762,10 +3800,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22025",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3780,10 +3819,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22128",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3798,10 +3838,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22222",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3816,10 +3857,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22162",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 4,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3834,10 +3876,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22180",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3852,10 +3895,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22196",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3870,10 +3914,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22198",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3888,10 +3933,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22207",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3906,10 +3952,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22215",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3924,10 +3971,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22621",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3942,10 +3990,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22629",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3960,10 +4009,31 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22059",
+        "institucion": "IE reservada (base insuficiente)",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false,
+        "absorbida_por_residuo": true,
+        "institucion_publica": "IE reservada (base insuficiente)"
+      },
+      {
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3978,10 +4048,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22099",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3996,10 +4067,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22117",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4014,10 +4086,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22130",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4032,10 +4105,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22142",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4050,10 +4124,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22155",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4068,10 +4143,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22167",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4086,10 +4162,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22170",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4104,10 +4181,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22175",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4122,10 +4200,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22176",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4140,10 +4219,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22195",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4158,10 +4238,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22204",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4176,10 +4257,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22206",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 4,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4194,10 +4276,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22209",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4212,10 +4295,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22219",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4230,10 +4314,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22555",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4248,10 +4333,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22572",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4266,10 +4352,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22631",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 3,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4284,10 +4371,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "22647",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4302,10 +4390,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36500",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4320,10 +4409,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36537",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4338,10 +4428,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36539",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4356,10 +4447,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36791",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4374,10 +4466,11 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
       },
       {
-        "institucion": "36795",
+        "institucion": "IE reservada (base insuficiente)",
         "n_estudiantes": 2,
         "satisfactorio": {
           "estado": "suprimido"
@@ -4392,7 +4485,28 @@
           "estado": "suprimido"
         },
         "carga_estimada": null,
-        "base_suficiente": false
+        "base_suficiente": false,
+        "institucion_publica": "IE reservada (base insuficiente)"
+      },
+      {
+        "institucion": "IE reservada (base insuficiente)",
+        "n_estudiantes": 21,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false,
+        "absorbida_por_residuo": true,
+        "institucion_publica": "IE reservada (base insuficiente)"
       }
     ]
   }
