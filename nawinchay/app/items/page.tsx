@@ -1,3 +1,4 @@
+import TourDemo from "@/components/TourDemo";
 import canonicoRaw from "@/data/canonico.json";
 import fixtureRaw from "@/data/fixture-diagnostico.json";
 import {
@@ -20,13 +21,14 @@ const fixture = fixtureRaw as unknown as {
 };
 const PROVEEDOR = "demo" as const;
 
-function BadgeProveedor() {
+function BadgeProveedor({ ancla }: { ancla?: boolean }) {
   const estilo =
     PROVEEDOR === "demo"
       ? "border-sky-500/50 text-sky-300"
       : "border-brand-green/50 text-brand-green";
   return (
     <span
+      data-tour={ancla ? "badge" : undefined}
       className={`rounded border px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider ${estilo}`}
       title={`Diagnostico precomputado con ${fixture._meta.modelo} via ${fixture._meta.proveedor}. Se sirve sin red.`}
     >
@@ -67,7 +69,10 @@ export default function Items() {
       </p>
 
       {/* ── dot-plot de los 20 items ─────────────────────────────────────── */}
-      <section className="mt-8 rounded-lg border border-brand-outline bg-brand-surface2 p-5">
+      <section
+        data-tour="dotplot"
+        className="mt-8 rounded-lg border border-brand-outline bg-brand-surface2 p-5"
+      >
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="font-display text-lg font-semibold text-white">Acierto por item</h2>
           <p className="font-mono text-[10px] uppercase tracking-widest text-neutral-500">
@@ -80,7 +85,11 @@ export default function Items() {
           {E.items.map((it) => {
             const anomalo = it.categoria !== "normal";
             return (
-              <div key={it.item} className="flex items-center gap-3">
+              <div
+                key={it.item}
+                data-tour={it.item === 3 ? "fila-3" : undefined}
+                className="flex items-center gap-3"
+              >
                 <span className="w-6 shrink-0 text-right font-mono text-[11px] tabular-nums text-neutral-500">
                   {it.item}
                 </span>
@@ -133,6 +142,7 @@ export default function Items() {
         {[i3, i9].map((it) => (
           <article
             key={it.item}
+            data-tour={`card-${it.item}`}
             className={`rounded-lg border bg-brand-surface2 p-5 ${
               COLOR_CATEGORIA[it.categoria as CategoriaItem].split(" ")[1]
             }`}
@@ -187,7 +197,7 @@ export default function Items() {
                     <p className="font-mono text-[10px] uppercase tracking-widest text-neutral-500">
                       Diagnostico
                     </p>
-                    <BadgeProveedor />
+                    <BadgeProveedor ancla={it.item === 3} />
                   </div>
                   <p className="mt-2 text-sm font-medium text-white">{d.titulo}</p>
                   <p className="mt-2 text-xs leading-relaxed text-neutral-400">{d.lectura}</p>
@@ -203,7 +213,10 @@ export default function Items() {
       </section>
 
       {/* ── capacidad mas debil, con la cifra congelada ──────────────────── */}
-      <section className="mt-6 rounded-lg border border-brand-outline bg-brand-surface2 p-5">
+      <section
+        data-tour="debil"
+        className="mt-6 rounded-lg border border-brand-outline bg-brand-surface2 p-5"
+      >
         <h2 className="font-display text-lg font-semibold text-white">Capacidad mas debil</h2>
         <div className="mt-3 flex flex-wrap items-baseline gap-x-4 gap-y-1">
           <span className="font-display text-3xl font-semibold text-white">
@@ -256,6 +269,9 @@ export default function Items() {
         lo que no encontramos en los reportes recibidos es esto expuesto como alerta rutinaria por
         item, que llegue a quien redacta el plan de remediacion.
       </p>
+
+      {/* Tour guiado. Renderiza null y no arranca solo: ?tour=1 o la tecla "t". */}
+      <TourDemo />
     </main>
   );
 }
