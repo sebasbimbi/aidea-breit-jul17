@@ -60,7 +60,6 @@
     .drop{border-color:#30463C}
     .drop:hover,.drop.ready{border-color:#27F3A9;background:rgba(39,243,169,.06)}
     .drop.dragging{border-style:solid;border-color:#27F3A9;background:rgba(39,243,169,.14)}
-    .drop.dragging *{pointer-events:none}
     .rubric{border-color:#30463C}
     .rubric pre{background:#111;color:#c9d1cd}
     .card{background:#111;border-color:#30463C}
@@ -141,10 +140,21 @@ if(!ACCEPTED.includes(extension))return status(`«${file.name}» no es compatibl
     // no escuchaba nada: el archivo se soltaba, no pasaba nada y el usuario recibía
     // «Selecciona una rúbrica» al generar. Peor aún, sin preventDefault el navegador
     // abre el PDF en la pestaña y se pierde el trabajo en pantalla.
-    ["dragenter","dragover"].forEach(type=>$("drop").addEventListener(type,e=>{e.preventDefault();e.dataTransfer.dropEffect="copy";$("drop").classList.add("dragging")}));
-    ["dragleave","dragend"].forEach(type=>$("drop").addEventListener(type,()=>$("drop").classList.remove("dragging")));
-    $("drop").addEventListener("drop",e=>{e.preventDefault();$("drop").classList.remove("dragging");const file=e.dataTransfer?.files?.[0];if(!file)return status("No se recibió ningún archivo. Intenta hacer clic para seleccionarlo.","error");const transfer=new DataTransfer();transfer.items.add(file);$("file").files=transfer.files;acceptFile(file)});
-    ["dragover","drop"].forEach(type=>window.addEventListener(type,e=>{if(!$("drop").contains(e.target))e.preventDefault()}));
+    // Solo nos interesan los arrastres de ARCHIVOS. Arrastrar texto dentro de un
+    // textarea o input es una funcion nativa del navegador y cancelarla romperia
+    // la edicion de enunciados y alternativas.
+    const isFileDrag=e=>Array.from(e.dataTransfer?.types||[]).includes("Files");
+    ["dragenter","dragover"].forEach(evt=>$("drop").addEventListener(evt,e=>{if(!isFileDrag(e))return;e.preventDefault();e.dataTransfer.dropEffect="copy";$("drop").classList.add("dragging")}));
+    // relatedTarget evita el parpadeo: al pasar sobre el texto interno el navegador
+    // dispara dragleave aunque el puntero siga dentro del recuadro.
+    $("drop").addEventListener("dragleave",e=>{if(!$("drop").contains(e.relatedTarget))$("drop").classList.remove("dragging")});
+    $("drop").addEventListener("dragend",()=>$("drop").classList.remove("dragging"));
+    $("drop").addEventListener("drop",e=>{if(!isFileDrag(e))return;e.preventDefault();$("drop").classList.remove("dragging");const file=e.dataTransfer?.files?.[0];if(!file)return status("No se recibió ningún archivo. Intenta hacer clic para seleccionarlo.","error");const transfer=new DataTransfer();transfer.items.add(file);$("file").files=transfer.files;acceptFile(file)});
+    // Fuera del recuadro: el cursor dice «aqui no» y, si aun asi se suelta, se avisa
+    // en vez de tragarse el archivo en silencio. Sin esto el navegador abriria el
+    // PDF en la pestaña y se perderia el trabajo en pantalla.
+    window.addEventListener("dragover",e=>{if(!isFileDrag(e)||$("drop").contains(e.target))return;e.preventDefault();e.dataTransfer.dropEffect="none"});
+    window.addEventListener("drop",e=>{if(!isFileDrag(e)||$("drop").contains(e.target))return;e.preventDefault();status("Suelta el archivo dentro del recuadro punteado.","error")});
     async function extractPdf(file){const data=new Uint8Array(await file.arrayBuffer());const pdf=await pdfjsLib.getDocument({data}).promise;const pages=[];for(let n=1;n<=pdf.numPages;n++){status(`Extrayendo texto: página ${n} de ${pdf.numPages}…`);const page=await pdf.getPage(n);const content=await page.getTextContent();pages.push(content.items.map(i=>i.str).join(" "))}return pages.join("\n\n").trim()}
     async function extractWord(file){if(!window.mammoth)throw new Error("No se pudo cargar el lector de Word. Revisa tu conexión.");status("Extrayendo texto del documento Word…");const result=await window.mammoth.extractRawText({arrayBuffer:await file.arrayBuffer()});return String(result.value||"").trim()}
     async function extractExcel(file){if(!window.XLSX)throw new Error("No se pudo cargar el lector de Excel. Revisa tu conexión.");const workbook=window.XLSX.read(await file.arrayBuffer(),{type:"array"});const sheets=[];for(let index=0;index<workbook.SheetNames.length;index++){const name=workbook.SheetNames[index];status(`Extrayendo hoja ${index+1} de ${workbook.SheetNames.length}: ${name}…`);const csv=window.XLSX.utils.sheet_to_csv(workbook.Sheets[name],{blankrows:false});if(csv.trim())sheets.push(`HOJA ${index+1}: ${name}\n${csv}`)}return sheets.join("\n\n").trim()}
