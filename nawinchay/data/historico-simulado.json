@@ -1,0 +1,2399 @@
+{
+ "_meta": {
+  "que_es": "Serie historica de demostracion. Los anios 2024 y 2025 son SIMULADOS: no existe fuente para ellos.",
+  "real": "Nombres de distrito e institucion, bases (n) y todas las cifras de 2026. Provienen de data/canonico.json.",
+  "simulado": "Unicamente los porcentajes de logro satisfactorio de 2024 y 2025. Generados de forma determinista para demostrar el modulo interanual.",
+  "advertencia": "Ninguna cifra de 2024 o 2025 debe citarse como hallazgo. La pantalla demuestra que el modulo funciona, no que algo haya ocurrido.",
+  "generado": "2026-07-18",
+  "determinista": true,
+  "umbral_supresion": 5,
+  "anio_real": 2026,
+  "anios_simulados": [
+   2024,
+   2025
+  ],
+  "indicador": "satisfactorio"
+ },
+ "anios": [
+  2024,
+  2025,
+  2026
+ ],
+ "filas": [
+  {
+   "tipo": "distrito",
+   "nombre": "TAMBO",
+   "n_referencia": 37,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 29.57,
+     "n": 37,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 32.19,
+     "n": 37,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 32.43,
+     "n": 37,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "SANTIAGO DE QUIRAHUARA",
+   "n_referencia": 16,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 23.65,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 22.28,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 23.44,
+     "n": 16,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "HUAYACUNDO ARMA",
+   "n_referencia": 15,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 23.19,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 23.84,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 22.03,
+     "n": 15,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "SANTO DOMINGO DE CAPILLAS",
+   "n_referencia": 45,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 17.12,
+     "n": 45,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 17.9,
+     "n": 45,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 16.09,
+     "n": 45,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "QUITO-ARMA",
+   "n_referencia": 56,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 16.07,
+     "n": 56,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 15.77,
+     "n": 56,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 15.25,
+     "n": 56,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "CORDOVA",
+   "n_referencia": 48,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 16.71,
+     "n": 48,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 17,
+     "n": 48,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 14.06,
+     "n": 48,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "HUAYTARA",
+   "n_referencia": 211,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 13.17,
+     "n": 211,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 13.42,
+     "n": 211,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 13.16,
+     "n": 211,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "SAN ANTONIO DE CUSICANCHA",
+   "n_referencia": 153,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 13.34,
+     "n": 153,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 12.35,
+     "n": 153,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 12.58,
+     "n": 153,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "AYAVI",
+   "n_referencia": 34,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 11.72,
+     "n": 34,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 12.49,
+     "n": 34,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 10.29,
+     "n": 34,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "SANTIAGO DE CHOCORVOS",
+   "n_referencia": 135,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 13.2,
+     "n": 135,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 11.81,
+     "n": 135,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 10.19,
+     "n": 135,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "OCOYO",
+   "n_referencia": 77,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 12.03,
+     "n": 77,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 12.37,
+     "n": 77,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 9.74,
+     "n": 77,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "SAN ISIDRO",
+   "n_referencia": 29,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 6.91,
+     "n": 29,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 6.57,
+     "n": 29,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 8.62,
+     "n": 29,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "PILPICHACA",
+   "n_referencia": 465,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 6.02,
+     "n": 465,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 6.02,
+     "n": 465,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 6.29,
+     "n": 465,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "SAN FRANCISCO DE SANGAYAICO",
+   "n_referencia": 88,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 6.52,
+     "n": 88,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 6.25,
+     "n": 88,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 6.1,
+     "n": 88,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "QUERCO",
+   "n_referencia": 50,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 7.13,
+     "n": 50,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 8.2,
+     "n": 50,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 5.5,
+     "n": 50,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "distrito",
+   "nombre": "LARAMARCA",
+   "n_referencia": 49,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 4.53,
+     "n": 49,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 7.66,
+     "n": 49,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 4.12,
+     "n": 49,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "SAN JUAN BAUTISTA",
+   "n_referencia": 91,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 4.44,
+     "n": 91,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 2.65,
+     "n": 91,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 1.1,
+     "n": 91,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "JOSE CARLOS MARIATEGUI",
+   "n_referencia": 78,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0.63,
+     "n": 78,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 1.78,
+     "n": 78,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 78,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22033",
+   "n_referencia": 82,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 9.87,
+     "n": 82,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 11.44,
+     "n": 82,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 11.04,
+     "n": 82,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22023",
+   "n_referencia": 112,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 24.02,
+     "n": 112,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 22.95,
+     "n": 112,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 23.36,
+     "n": 112,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "PACOMARCA",
+   "n_referencia": 32,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 3.83,
+     "n": 32,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 4.59,
+     "n": 32,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 32,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "PELAPATA",
+   "n_referencia": 36,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 3.01,
+     "n": 36,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 36,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 36,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "TECNICO AGROPECUARIO ARTESANAL",
+   "n_referencia": 30,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 30,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 30,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 30,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "SAN FRANCISCO",
+   "n_referencia": 29,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 1.69,
+     "n": 29,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 2.05,
+     "n": 29,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 29,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "JOSE DE SAN MARTIN",
+   "n_referencia": 25,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 1.23,
+     "n": 25,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0.81,
+     "n": 25,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 25,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22504",
+   "n_referencia": 29,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 3.74,
+     "n": 29,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 1.63,
+     "n": 29,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 3.48,
+     "n": 29,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "MANUEL GONZALES PRADA",
+   "n_referencia": 31,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0.64,
+     "n": 31,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 2.22,
+     "n": 31,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 31,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22595",
+   "n_referencia": 28,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 5.55,
+     "n": 28,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 10.02,
+     "n": 28,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 8.04,
+     "n": 28,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "SAN FRANCISCO DE ASIS",
+   "n_referencia": 20,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 3.74,
+     "n": 20,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0.59,
+     "n": 20,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 20,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22119",
+   "n_referencia": 26,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 26,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 3.88,
+     "n": 26,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 7.77,
+     "n": 26,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22153",
+   "n_referencia": 26,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 8.73,
+     "n": 26,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 5.12,
+     "n": 26,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 5.88,
+     "n": 26,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22586",
+   "n_referencia": 17,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 2.24,
+     "n": 17,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 2.01,
+     "n": 17,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 1.56,
+     "n": 17,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "SAN FELIPE",
+   "n_referencia": 15,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 15,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22159",
+   "n_referencia": 24,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 18.56,
+     "n": 24,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 14.73,
+     "n": 24,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 10.42,
+     "n": 24,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "JUAN PABLO VIZCARDO Y GUZMAN",
+   "n_referencia": 18,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0.99,
+     "n": 18,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 5.56,
+     "n": 18,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 18,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "INGAHUASI",
+   "n_referencia": 16,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 6.65,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 4.73,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 4.84,
+     "n": 16,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22122",
+   "n_referencia": 16,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0.78,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 3.12,
+     "n": 16,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22149",
+   "n_referencia": 19,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 8.32,
+     "n": 19,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 5.54,
+     "n": 19,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 7.89,
+     "n": 19,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "PEDRO PABLO ATUSPARIA",
+   "n_referencia": 17,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 6.45,
+     "n": 17,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 3.38,
+     "n": 17,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 4.48,
+     "n": 17,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "SANTA ROSA",
+   "n_referencia": 12,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 12,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "MIGUEL GRAU SEMINARIO",
+   "n_referencia": 14,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 14,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 14,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 14,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "NINO JESUS",
+   "n_referencia": 16,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 5.3,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 4.3,
+     "n": 16,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 16,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "ELEODORO BELLIDO BRAVO",
+   "n_referencia": 13,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 2.98,
+     "n": 13,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0.83,
+     "n": 13,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 13,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "ANDRES AVELINO CACERES",
+   "n_referencia": 10,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 5.34,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 10,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22087",
+   "n_referencia": 25,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 34.71,
+     "n": 25,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 32.47,
+     "n": 25,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 29.59,
+     "n": 25,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22223",
+   "n_referencia": 15,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 3.8,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 3.15,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 3.33,
+     "n": 15,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22085",
+   "n_referencia": 13,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 22.43,
+     "n": 13,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 20.51,
+     "n": 13,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 19.23,
+     "n": 13,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22619",
+   "n_referencia": 8,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 3.63,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 8,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "CESAR VALLEJO",
+   "n_referencia": 9,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 3.87,
+     "n": 9,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 9,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 9,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22184 HERMINIA SANTE HUAROTO",
+   "n_referencia": 15,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 17.52,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 11.79,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 12.07,
+     "n": 15,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22191",
+   "n_referencia": 11,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 9.78,
+     "n": 11,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 13.33,
+     "n": 11,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 13.64,
+     "n": 11,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22217",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0.32,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "36607",
+   "n_referencia": 15,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 11.87,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 14.09,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 15,
+     "n": 15,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "LIBERTADOR SIMON BOLIVAR",
+   "n_referencia": 11,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 11,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0.4,
+     "n": 11,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 2.27,
+     "n": 11,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "JOSE MARIA ARGUEDAS",
+   "n_referencia": 12,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 17.12,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 14.49,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 10.87,
+     "n": 12,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22164",
+   "n_referencia": 20,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 8.34,
+     "n": 20,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 9.18,
+     "n": 20,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 14.1,
+     "n": 20,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22615",
+   "n_referencia": 15,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 11.62,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 12.29,
+     "n": 15,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 10,
+     "n": 15,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22169",
+   "n_referencia": 10,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 19.45,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 14.2,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 17.95,
+     "n": 10,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22157",
+   "n_referencia": 20,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 9.19,
+     "n": 20,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 13.77,
+     "n": 20,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 17.5,
+     "n": 20,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22127",
+   "n_referencia": 12,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 18.53,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 19.1,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 16.67,
+     "n": 12,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "MARCAS PAMPAPUQUIO",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 1.73,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "APOSTOL SANTIAGO",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 4.45,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 4.16,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22034",
+   "n_referencia": 10,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 11.7,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 9.53,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 12.5,
+     "n": 10,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "SANTA TERESITA",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 3.7,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22569",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 22.91,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 22.18,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 17.86,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22638",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22166",
+   "n_referencia": 12,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 11.8,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 8.19,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 12.5,
+     "n": 12,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "CELESTINO MANCHEGO MUNOZ",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 7.27,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 4.89,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "SANTA ROSA DE ACORA",
+   "n_referencia": 5,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0.1,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 0,
+     "n": 5,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22118",
+   "n_referencia": 13,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 5.68,
+     "n": 13,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 3.43,
+     "n": 13,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 3.85,
+     "n": 13,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22018",
+   "n_referencia": 8,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 17.18,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 12.75,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 15.62,
+     "n": 8,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22614",
+   "n_referencia": 9,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 14.99,
+     "n": 9,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 14.38,
+     "n": 9,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 13.89,
+     "n": 9,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22490",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 1.55,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 8.77,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 4.17,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22165",
+   "n_referencia": 14,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 22.76,
+     "n": 14,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 27.36,
+     "n": 14,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 26.79,
+     "n": 14,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22630",
+   "n_referencia": 8,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 19.18,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 20.26,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 18.75,
+     "n": 8,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22004",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 34.51,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 29.83,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 29.17,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "36541",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 20.12,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 20.38,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 20.83,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "36597",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 4.19,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 13.18,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 12.5,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22168",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 6.17,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 6.24,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 8.33,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22503",
+   "n_referencia": 12,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 8.48,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 6.72,
+     "n": 12,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 6.25,
+     "n": 12,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22211",
+   "n_referencia": 5,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 8.64,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 11.72,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 5,
+     "n": 5,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "36536",
+   "n_referencia": 5,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 0.38,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 10.87,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 5,
+     "n": 5,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22609",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 55.93,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 52.9,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 46.43,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22029",
+   "n_referencia": 8,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 37.43,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 43,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 37.5,
+     "n": 8,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22597",
+   "n_referencia": 10,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 8.99,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 13.09,
+     "n": 10,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 17.5,
+     "n": 10,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22624",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 15.05,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 15.43,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 8.33,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "36540",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 10.48,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 6.3,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 4.76,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22181",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 41.07,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 44.21,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 50,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22202",
+   "n_referencia": 5,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 34.72,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 36.45,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 35,
+     "n": 5,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22224",
+   "n_referencia": 5,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 11.38,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 14.51,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 15,
+     "n": 5,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22648",
+   "n_referencia": 7,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 47.55,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 51.1,
+     "n": 7,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 42.86,
+     "n": 7,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "36599",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 35.74,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 40.03,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 37.5,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22141",
+   "n_referencia": 5,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 50.07,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 55.77,
+     "n": 5,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 65,
+     "n": 5,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22550",
+   "n_referencia": 6,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 73.06,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 63.4,
+     "n": 6,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 62.5,
+     "n": 6,
+     "origen": "REAL"
+    }
+   }
+  },
+  {
+   "tipo": "escuela",
+   "nombre": "22048",
+   "n_referencia": 8,
+   "anios": {
+    "2024": {
+     "estado": "publicado",
+     "pct": 51.12,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2025": {
+     "estado": "publicado",
+     "pct": 50.49,
+     "n": 8,
+     "origen": "SIMULADO"
+    },
+    "2026": {
+     "estado": "publicado",
+     "pct": 56.25,
+     "n": 8,
+     "origen": "REAL"
+    }
+   }
+  }
+ ]
+}
