@@ -1,0 +1,4362 @@
+{
+  "meta": {
+    "producto": "Nawinchay",
+    "generado_por": "scripts/build-canonico.py",
+    "aplicacion": "DataEdHack AIdea x BREIT, 18 jul 2026",
+    "ley": "Ley 29733: solo agregados, base menor a 5 suprimida, sin nombres ni DNI",
+    "advertencia_union": "era y atisunchik son universos DISJUNTOS y no comparten ninguna llave. No unirlos: son instrumentos, poblaciones y denominadores distintos."
+  },
+  "era": {
+    "fuente": "Evaluacion Regional de Estudiantes (ERA) Huancavelica 2025",
+    "corte": {
+      "area": "Ciencia y Tecnologia",
+      "grado": "2do de secundaria",
+      "nivel": "Secundaria",
+      "ugel": "Huaytara"
+    },
+    "soporta_conteos": true,
+    "denominador": {
+      "huaytara": 237,
+      "regional": 5002,
+      "resto_regional": 4765,
+      "nota": "N_REGIONAL reconstruido exigiendo conteos enteros en los 20 items. Unico valor en el rango, residuo maximo 0.0025. Sobredeterminado, no circular."
+    },
+    "azar": {
+      "valor": 25.0,
+      "alternativas": 4,
+      "alternativas_confirmadas": false,
+      "nota": "SIN CONFIRMAR. La prueba real no esta en disco y la tabla de especificaciones no declara alternativas. Las 20 claves usan a,b,c,d (a=9 b=3 c=6 d=2); con 5 opciones y claves uniformes la probabilidad de que ninguna cayera en la quinta es 1.15 por ciento: inclinacion fuerte, nunca prueba. El item 3 sobrevive 3, 4 o 5 alternativas; el item 9 depende de este supuesto."
+    },
+    "items": [
+      {
+        "item": 1,
+        "clave": "c",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Problematiza situaciones",
+        "desempeno_precisado": "Formula preguntas investigables sobre fenomenos del entorno",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 157,
+          "n": 237,
+          "pct": 66.24
+        },
+        "resto_regional": {
+          "k": 3167,
+          "n": 4765,
+          "pct": 66.46
+        },
+        "delta_pp": -0.22,
+        "margen": {
+          "lo": 60.01,
+          "hi": 71.96
+        },
+        "z_contra_azar_huaytara": 14.66,
+        "z_contra_azar_resto": 66.1,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 2,
+        "clave": "a",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Problematiza situaciones",
+        "desempeno_precisado": "Plantea hipotesis en las que establece relaciones de causalidad entre las variables",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 200,
+          "n": 237,
+          "pct": 84.39
+        },
+        "resto_regional": {
+          "k": 4069,
+          "n": 4765,
+          "pct": 85.39
+        },
+        "delta_pp": -1.01,
+        "margen": {
+          "lo": 79.22,
+          "hi": 88.46
+        },
+        "z_contra_azar_huaytara": 21.11,
+        "z_contra_azar_resto": 96.28,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 3,
+        "clave": "c",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Analiza datos e informacion",
+        "desempeno_precisado": "Organiza e interpreta informacion sobre fenomenos naturales",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 14,
+          "n": 237,
+          "pct": 5.91
+        },
+        "resto_regional": {
+          "k": 282,
+          "n": 4765,
+          "pct": 5.92
+        },
+        "delta_pp": -0.01,
+        "margen": {
+          "lo": 3.55,
+          "hi": 9.67
+        },
+        "z_contra_azar_huaytara": -6.79,
+        "z_contra_azar_resto": -30.42,
+        "bajo_azar": true,
+        "categoria": "defecto_item"
+      },
+      {
+        "item": 4,
+        "clave": "a",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Disena estrategias para hacer indagacion",
+        "desempeno_precisado": "Propone procedimientos adecuados para recopilar datos confiables",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 103,
+          "n": 237,
+          "pct": 43.46
+        },
+        "resto_regional": {
+          "k": 1570,
+          "n": 4765,
+          "pct": 32.95
+        },
+        "delta_pp": 10.51,
+        "margen": {
+          "lo": 37.3,
+          "hi": 49.83
+        },
+        "z_contra_azar_huaytara": 6.56,
+        "z_contra_azar_resto": 12.67,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 5,
+        "clave": "a",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Evalua y comunica el proceso y resultados de su indagacion",
+        "desempeno_precisado": "Sustenta si sus conclusiones responden con base en evidencia y contribuyen a demostrar su hipotesis",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 125,
+          "n": 237,
+          "pct": 52.74
+        },
+        "resto_regional": {
+          "k": 2838,
+          "n": 4765,
+          "pct": 59.56
+        },
+        "delta_pp": -6.82,
+        "margen": {
+          "lo": 46.39,
+          "hi": 59.0
+        },
+        "z_contra_azar_huaytara": 9.86,
+        "z_contra_azar_resto": 55.09,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 6,
+        "clave": "c",
+        "competencia": "Explica el mundo fisico basandose en conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "capacidad": "Comprende y usa conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "desempeno_precisado": "Explica como los seres vivos responden a factores bioticos y abioticos del ambiente, diferenciando adaptacion, resistencia, resiliencia y extincion",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 156,
+          "n": 237,
+          "pct": 65.82
+        },
+        "resto_regional": {
+          "k": 3010,
+          "n": 4765,
+          "pct": 63.17
+        },
+        "delta_pp": 2.65,
+        "margen": {
+          "lo": 59.57,
+          "hi": 71.57
+        },
+        "z_contra_azar_huaytara": 14.51,
+        "z_contra_azar_resto": 60.85,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 7,
+        "clave": "c",
+        "competencia": "Explica el mundo fisico basandose en conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "capacidad": "Comprende y usa conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "desempeno_precisado": "Clasifica a los organismos segun su rol trofico",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 79,
+          "n": 237,
+          "pct": 33.33
+        },
+        "resto_regional": {
+          "k": 1997,
+          "n": 4765,
+          "pct": 41.91
+        },
+        "delta_pp": -8.58,
+        "margen": {
+          "lo": 27.64,
+          "hi": 39.56
+        },
+        "z_contra_azar_huaytara": 2.96,
+        "z_contra_azar_resto": 26.96,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 8,
+        "clave": "a",
+        "competencia": "Explica el mundo fisico basandose en conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "capacidad": "Comprende y usa conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "desempeno_precisado": "Diferencia productores, consumidores primarios y secundarios",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 117,
+          "n": 237,
+          "pct": 49.37
+        },
+        "resto_regional": {
+          "k": 2580,
+          "n": 4765,
+          "pct": 54.14
+        },
+        "delta_pp": -4.78,
+        "margen": {
+          "lo": 43.06,
+          "hi": 55.69
+        },
+        "z_contra_azar_huaytara": 8.66,
+        "z_contra_azar_resto": 46.46,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 9,
+        "clave": "b",
+        "competencia": "Explica el mundo fisico basandose en conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "capacidad": "Comprende y usa conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "desempeno_precisado": "Establece semejanzas y diferencias para explicar el funcionamiento de la celula como unidad basica de los seres vivos",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 33,
+          "n": 237,
+          "pct": 13.92
+        },
+        "resto_regional": {
+          "k": 961,
+          "n": 4765,
+          "pct": 20.17
+        },
+        "delta_pp": -6.24,
+        "margen": {
+          "lo": 10.09,
+          "hi": 18.91
+        },
+        "z_contra_azar_huaytara": -3.94,
+        "z_contra_azar_resto": -7.7,
+        "bajo_azar": true,
+        "categoria": "concepcion_errada"
+      },
+      {
+        "item": 10,
+        "clave": "a",
+        "competencia": "Explica el mundo fisico basandose en conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "capacidad": "Comprende y usa conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "desempeno_precisado": "Explica como los organismos unicelulares realizan funciones vitales como la nutricion a traves de estructuras internas simples",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 100,
+          "n": 237,
+          "pct": 42.19
+        },
+        "resto_regional": {
+          "k": 1659,
+          "n": 4765,
+          "pct": 34.82
+        },
+        "delta_pp": 7.38,
+        "margen": {
+          "lo": 36.08,
+          "hi": 48.56
+        },
+        "z_contra_azar_huaytara": 6.11,
+        "z_contra_azar_resto": 15.65,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 11,
+        "clave": "a",
+        "competencia": "Explica el mundo fisico basandose en conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "capacidad": "Evalua las implicancias del saber y del quehacer cientifico y tecnologico",
+        "desempeno_precisado": "Fundamenta su posicion respecto al impacto de los alimentos transgenicos en la salud y el ambiente",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 155,
+          "n": 237,
+          "pct": 65.4
+        },
+        "resto_regional": {
+          "k": 3044,
+          "n": 4765,
+          "pct": 63.88
+        },
+        "delta_pp": 1.52,
+        "margen": {
+          "lo": 59.14,
+          "hi": 71.17
+        },
+        "z_contra_azar_huaytara": 14.36,
+        "z_contra_azar_resto": 61.98,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 12,
+        "clave": "c",
+        "competencia": "Disena y construye soluciones tecnologicas para resolver problemas de su entorno",
+        "capacidad": "Determina una alternativa de solucion tecnologica",
+        "desempeno_precisado": "Representa alternativas de diseno para el Techo con Sistema de Aislamiento en viviendas de zonas andinas",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 152,
+          "n": 237,
+          "pct": 64.14
+        },
+        "resto_regional": {
+          "k": 3118,
+          "n": 4765,
+          "pct": 65.44
+        },
+        "delta_pp": -1.3,
+        "margen": {
+          "lo": 57.85,
+          "hi": 69.97
+        },
+        "z_contra_azar_huaytara": 13.91,
+        "z_contra_azar_resto": 64.46,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 13,
+        "clave": "a",
+        "competencia": "Disena y construye soluciones tecnologicas para resolver problemas de su entorno",
+        "capacidad": "Implementa y valida la alternativa de solucion tecnologica",
+        "desempeno_precisado": "Realiza ajustes en el diseno de la Cocina Mejorada para optimizar la combustion y reducir la exposicion al humo",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 175,
+          "n": 237,
+          "pct": 73.84
+        },
+        "resto_regional": {
+          "k": 3534,
+          "n": 4765,
+          "pct": 74.17
+        },
+        "delta_pp": -0.33,
+        "margen": {
+          "lo": 67.9,
+          "hi": 79.02
+        },
+        "z_contra_azar_huaytara": 17.36,
+        "z_contra_azar_resto": 78.38,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 14,
+        "clave": "d",
+        "competencia": "Disena y construye soluciones tecnologicas para resolver problemas de su entorno",
+        "capacidad": "Determina una alternativa de solucion tecnologica",
+        "desempeno_precisado": "Representa su alternativa e identifica las causas del problema para proponer una solucion que utilice energia solar",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 160,
+          "n": 237,
+          "pct": 67.51
+        },
+        "resto_regional": {
+          "k": 3335,
+          "n": 4765,
+          "pct": 69.99
+        },
+        "delta_pp": -2.48,
+        "margen": {
+          "lo": 61.31,
+          "hi": 73.15
+        },
+        "z_contra_azar_huaytara": 15.11,
+        "z_contra_azar_resto": 71.72,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 15,
+        "clave": "a",
+        "competencia": "Disena y construye soluciones tecnologicas para resolver problemas de su entorno",
+        "capacidad": "Implementa y valida la alternativa de solucion tecnologica",
+        "desempeno_precisado": "Realiza ajustes y pruebas de funcionamiento y seguridad a la lampara solar construida",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 152,
+          "n": 237,
+          "pct": 64.14
+        },
+        "resto_regional": {
+          "k": 3269,
+          "n": 4765,
+          "pct": 68.6
+        },
+        "delta_pp": -4.47,
+        "margen": {
+          "lo": 57.85,
+          "hi": 69.97
+        },
+        "z_contra_azar_huaytara": 13.91,
+        "z_contra_azar_resto": 69.51,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 16,
+        "clave": "d",
+        "competencia": "Disena y construye soluciones tecnologicas para resolver problemas de su entorno",
+        "capacidad": "Determina una alternativa de solucion tecnologica",
+        "desempeno_precisado": "Representa su alternativa de solucion para un sistema de riego que optimice el uso del agua en la huerta comunal",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 100,
+          "n": 237,
+          "pct": 42.19
+        },
+        "resto_regional": {
+          "k": 2193,
+          "n": 4765,
+          "pct": 46.02
+        },
+        "delta_pp": -3.83,
+        "margen": {
+          "lo": 36.08,
+          "hi": 48.56
+        },
+        "z_contra_azar_huaytara": 6.11,
+        "z_contra_azar_resto": 33.51,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 17,
+        "clave": "b",
+        "competencia": "Disena y construye soluciones tecnologicas para resolver problemas de su entorno",
+        "capacidad": "Implementa y valida la alternativa de solucion tecnologica",
+        "desempeno_precisado": "Verifica el funcionamiento de cada parte del sistema de riego y realiza ajustes o mejoras",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 129,
+          "n": 237,
+          "pct": 54.43
+        },
+        "resto_regional": {
+          "k": 2597,
+          "n": 4765,
+          "pct": 54.5
+        },
+        "delta_pp": -0.07,
+        "margen": {
+          "lo": 48.07,
+          "hi": 60.65
+        },
+        "z_contra_azar_huaytara": 10.46,
+        "z_contra_azar_resto": 47.03,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 18,
+        "clave": "c",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Problematiza situaciones",
+        "desempeno_precisado": "Formula preguntas de indagacion sobre la naturaleza de la levadura como ser vivo y propone hipotesis considerando variables",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 144,
+          "n": 237,
+          "pct": 60.76
+        },
+        "resto_regional": {
+          "k": 3042,
+          "n": 4765,
+          "pct": 63.84
+        },
+        "delta_pp": -3.08,
+        "margen": {
+          "lo": 54.42,
+          "hi": 66.76
+        },
+        "z_contra_azar_huaytara": 12.71,
+        "z_contra_azar_resto": 61.92,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 19,
+        "clave": "b",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Problematiza situaciones",
+        "desempeno_precisado": "Plantea hipotesis considerando variables independiente, dependiente e interviniente",
+        "nivel_estimacion_tabla": "alta",
+        "huaytara": {
+          "k": 121,
+          "n": 237,
+          "pct": 51.05
+        },
+        "resto_regional": {
+          "k": 2559,
+          "n": 4765,
+          "pct": 53.7
+        },
+        "delta_pp": -2.65,
+        "margen": {
+          "lo": 44.72,
+          "hi": 57.35
+        },
+        "z_contra_azar_huaytara": 9.26,
+        "z_contra_azar_resto": 45.76,
+        "bajo_azar": false,
+        "categoria": "normal"
+      },
+      {
+        "item": 20,
+        "clave": "a",
+        "competencia": "Indaga mediante metodos cientificos para construir conocimientos",
+        "capacidad": "Disena estrategias para hacer indagacion",
+        "desempeno_precisado": "Propone procedimientos que permitan observar, manipular y medir las variables para confirmar o refutar su hipotesis",
+        "nivel_estimacion_tabla": "media",
+        "huaytara": {
+          "k": 142,
+          "n": 237,
+          "pct": 59.92
+        },
+        "resto_regional": {
+          "k": 3014,
+          "n": 4765,
+          "pct": 63.25
+        },
+        "delta_pp": -3.34,
+        "margen": {
+          "lo": 53.57,
+          "hi": 65.95
+        },
+        "z_contra_azar_huaytara": 12.41,
+        "z_contra_azar_resto": 60.98,
+        "bajo_azar": false,
+        "categoria": "normal"
+      }
+    ],
+    "capacidades": [
+      {
+        "capacidad": "Analiza datos e informacion",
+        "n_items": 1,
+        "items": [
+          3
+        ],
+        "pct_promedio": 5.91,
+        "medible": false,
+        "advertencia": "item unico: no separa comportamiento del item del dominio de la capacidad",
+        "contiene_item_anomalo": true
+      },
+      {
+        "capacidad": "Comprende y usa conocimientos sobre los seres vivos, materia y energia, biodiversidad, Tierra y universo",
+        "n_items": 5,
+        "items": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "pct_promedio": 40.93,
+        "medible": true,
+        "advertencia": null,
+        "contiene_item_anomalo": true
+      },
+      {
+        "capacidad": "Determina una alternativa de solucion tecnologica",
+        "n_items": 3,
+        "items": [
+          12,
+          14,
+          16
+        ],
+        "pct_promedio": 57.95,
+        "medible": true,
+        "advertencia": null,
+        "contiene_item_anomalo": false
+      },
+      {
+        "capacidad": "Disena estrategias para hacer indagacion",
+        "n_items": 2,
+        "items": [
+          4,
+          20
+        ],
+        "pct_promedio": 51.69,
+        "medible": false,
+        "advertencia": null,
+        "contiene_item_anomalo": false
+      },
+      {
+        "capacidad": "Evalua las implicancias del saber y del quehacer cientifico y tecnologico",
+        "n_items": 1,
+        "items": [
+          11
+        ],
+        "pct_promedio": 65.4,
+        "medible": false,
+        "advertencia": "item unico: no separa comportamiento del item del dominio de la capacidad",
+        "contiene_item_anomalo": false
+      },
+      {
+        "capacidad": "Evalua y comunica el proceso y resultados de su indagacion",
+        "n_items": 1,
+        "items": [
+          5
+        ],
+        "pct_promedio": 52.74,
+        "medible": false,
+        "advertencia": "item unico: no separa comportamiento del item del dominio de la capacidad",
+        "contiene_item_anomalo": false
+      },
+      {
+        "capacidad": "Implementa y valida la alternativa de solucion tecnologica",
+        "n_items": 3,
+        "items": [
+          13,
+          15,
+          17
+        ],
+        "pct_promedio": 64.14,
+        "medible": true,
+        "advertencia": null,
+        "contiene_item_anomalo": false
+      },
+      {
+        "capacidad": "Problematiza situaciones",
+        "n_items": 4,
+        "items": [
+          1,
+          2,
+          18,
+          19
+        ],
+        "pct_promedio": 65.61,
+        "medible": true,
+        "advertencia": null,
+        "contiene_item_anomalo": false
+      }
+    ],
+    "por_area_regional": [
+      {
+        "area": "Ciencia y Tecnologia",
+        "pct_previo_al_inicio": 3.24,
+        "pct_inicio": 29.24,
+        "pct_proceso": 44.89,
+        "pct_satisfactorio": 22.62
+      },
+      {
+        "area": "Comunicacion",
+        "pct_previo_al_inicio": 4.91,
+        "pct_inicio": 28.77,
+        "pct_proceso": 46.71,
+        "pct_satisfactorio": 19.61
+      },
+      {
+        "area": "Matematica",
+        "pct_previo_al_inicio": 5.03,
+        "pct_inicio": 35.17,
+        "pct_proceso": 40.49,
+        "pct_satisfactorio": 19.32
+      },
+      {
+        "area": "Personal Social",
+        "pct_previo_al_inicio": 3.06,
+        "pct_inicio": 25.82,
+        "pct_proceso": 54.08,
+        "pct_satisfactorio": 17.04
+      },
+      {
+        "area": "Quechua",
+        "pct_previo_al_inicio": 4.17,
+        "pct_inicio": 30.69,
+        "pct_proceso": 36.63,
+        "pct_satisfactorio": 28.51
+      }
+    ]
+  },
+  "atisunchik": {
+    "fuente": "III Atisunchik Todos Podemos, UGEL Huaytara (evaluacion diagnostica)",
+    "edicion": "III",
+    "soporta_conteos": false,
+    "totales": {
+      "n_estudiantes": 1508,
+      "satisfactorio": 10.31,
+      "proceso": 34.85,
+      "inicio": 39.97,
+      "previo_al_inicio": 14.87
+    },
+    "referencia_interna": {
+      "valor": 10.31,
+      "etiqueta": "referencia interna, no es meta oficial",
+      "nota": "NUNCA usar el 17.70 de la ERA: otro instrumento, otra poblacion, otro denominador."
+    },
+    "base": {
+      "umbral_supresion": 5,
+      "escuelas_total": 141,
+      "escuelas_n_igual_1": 22,
+      "escuelas_bajo_5": 58,
+      "escuelas_bajo_10": 93,
+      "escuelas_publicables": 83,
+      "estudiantes_en_publicables": 1394,
+      "pct_estudiantes_conservados": 92.4
+    },
+    "carga_total_estimada": 828.4,
+    "distritos": [
+      {
+        "distrito": "PILPICHACA",
+        "n_estudiantes": 465,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 6.29,
+          "n": 465
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 32.31,
+          "n": 465
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 45.22,
+          "n": 465
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 16.18,
+          "n": 465
+        },
+        "carga_estimada": 285.5,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "HUAYTARA",
+        "n_estudiantes": 211,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 13.16,
+          "n": 211
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.28,
+          "n": 211
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 34.45,
+          "n": 211
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 14.11,
+          "n": 211
+        },
+        "carga_estimada": 102.5,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SAN ANTONIO DE CUSICANCHA",
+        "n_estudiantes": 153,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 12.58,
+          "n": 153
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 35.93,
+          "n": 153
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 38.91,
+          "n": 153
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 12.58,
+          "n": 153
+        },
+        "carga_estimada": 78.8,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SANTIAGO DE CHOCORVOS",
+        "n_estudiantes": 135,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.19,
+          "n": 135
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.49,
+          "n": 135
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 33.02,
+          "n": 135
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 18.3,
+          "n": 135
+        },
+        "carga_estimada": 69.3,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SAN FRANCISCO DE SANGAYAICO",
+        "n_estudiantes": 88,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 6.1,
+          "n": 88
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 28.49,
+          "n": 88
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.58,
+          "n": 88
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 14.83,
+          "n": 88
+        },
+        "carga_estimada": 57.6,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "OCOYO",
+        "n_estudiantes": 77,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 9.74,
+          "n": 77
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 31.82,
+          "n": 77
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 37.34,
+          "n": 77
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 21.1,
+          "n": 77
+        },
+        "carga_estimada": 45.0,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "LARAMARCA",
+        "n_estudiantes": 49,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 4.12,
+          "n": 49
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 27.84,
+          "n": 49
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 42.27,
+          "n": 49
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 25.77,
+          "n": 49
+        },
+        "carga_estimada": 33.3,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "QUERCO",
+        "n_estudiantes": 50,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 5.5,
+          "n": 50
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 34.0,
+          "n": 50
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 44.5,
+          "n": 50
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 16.0,
+          "n": 50
+        },
+        "carga_estimada": 30.2,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "CORDOVA",
+        "n_estudiantes": 48,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 14.06,
+          "n": 48
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 34.38,
+          "n": 48
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 30.73,
+          "n": 48
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 20.83,
+          "n": 48
+        },
+        "carga_estimada": 24.8,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "QUITO-ARMA",
+        "n_estudiantes": 56,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 15.25,
+          "n": 56
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 41.7,
+          "n": 56
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 36.77,
+          "n": 56
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 6.28,
+          "n": 56
+        },
+        "carga_estimada": 24.1,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SANTO DOMINGO DE CAPILLAS",
+        "n_estudiantes": 45,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 16.09,
+          "n": 45
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 32.76,
+          "n": 45
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 41.38,
+          "n": 45
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 9.77,
+          "n": 45
+        },
+        "carga_estimada": 23.0,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "AYAVI",
+        "n_estudiantes": 34,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.29,
+          "n": 34
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 35.29,
+          "n": 34
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 46.32,
+          "n": 34
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 8.09,
+          "n": 34
+        },
+        "carga_estimada": 18.5,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "TAMBO",
+        "n_estudiantes": 37,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 32.43,
+          "n": 37
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 33.78,
+          "n": 37
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 29.73,
+          "n": 37
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 4.05,
+          "n": 37
+        },
+        "carga_estimada": 12.5,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SAN ISIDRO",
+        "n_estudiantes": 29,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 8.62,
+          "n": 29
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 54.31,
+          "n": 29
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 34.48,
+          "n": 29
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 2.59,
+          "n": 29
+        },
+        "carga_estimada": 10.8,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "SANTIAGO DE QUIRAHUARA",
+        "n_estudiantes": 16,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 23.44,
+          "n": 16
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 40.62,
+          "n": 16
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 16
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 10.94,
+          "n": 16
+        },
+        "carga_estimada": 5.8,
+        "base_suficiente": true
+      },
+      {
+        "distrito": "HUAYACUNDO ARMA",
+        "n_estudiantes": 15,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 22.03,
+          "n": 15
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.98,
+          "n": 15
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 33.9,
+          "n": 15
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 5.08,
+          "n": 15
+        },
+        "carga_estimada": 5.8,
+        "base_suficiente": true
+      }
+    ],
+    "escuelas": [
+      {
+        "institucion": "SAN JUAN BAUTISTA",
+        "n_estudiantes": 91,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 1.1,
+          "n": 91
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 26.45,
+          "n": 91
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 45.18,
+          "n": 91
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 27.27,
+          "n": 91
+        },
+        "carga_estimada": 65.9,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "JOSE CARLOS MARIATEGUI",
+        "n_estudiantes": 78,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 78
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 16.94,
+          "n": 78
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 56.48,
+          "n": 78
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 26.58,
+          "n": 78
+        },
+        "carga_estimada": 64.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22033",
+        "n_estudiantes": 82,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 11.04,
+          "n": 82
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 40.38,
+          "n": 82
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 39.12,
+          "n": 82
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 9.46,
+          "n": 82
+        },
+        "carga_estimada": 39.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22023",
+        "n_estudiantes": 112,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 23.36,
+          "n": 112
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 46.26,
+          "n": 112
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 26.3,
+          "n": 112
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 4.08,
+          "n": 112
+        },
+        "carga_estimada": 34.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "PACOMARCA",
+        "n_estudiantes": 32,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 32
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 8.59,
+          "n": 32
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.78,
+          "n": 32
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 40.62,
+          "n": 32
+        },
+        "carga_estimada": 29.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "PELAPATA",
+        "n_estudiantes": 36,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 36
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 20.14,
+          "n": 36
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 64.58,
+          "n": 36
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 15.28,
+          "n": 36
+        },
+        "carga_estimada": 28.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "TECNICO AGROPECUARIO ARTESANAL",
+        "n_estudiantes": 30,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 30
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 15.0,
+          "n": 30
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 62.5,
+          "n": 30
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 22.5,
+          "n": 30
+        },
+        "carga_estimada": 25.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "SAN FRANCISCO",
+        "n_estudiantes": 29,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 29
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 18.58,
+          "n": 29
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 54.87,
+          "n": 29
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 26.55,
+          "n": 29
+        },
+        "carga_estimada": 23.6,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "JOSE DE SAN MARTIN",
+        "n_estudiantes": 25,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 25
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 8.79,
+          "n": 25
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 68.13,
+          "n": 25
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 23.08,
+          "n": 25
+        },
+        "carga_estimada": 22.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22504",
+        "n_estudiantes": 29,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 3.48,
+          "n": 29
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 24.35,
+          "n": 29
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 43.48,
+          "n": 29
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 28.7,
+          "n": 29
+        },
+        "carga_estimada": 20.9,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "MANUEL GONZALES PRADA",
+        "n_estudiantes": 31,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 31
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 34.96,
+          "n": 31
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 47.97,
+          "n": 31
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 17.07,
+          "n": 31
+        },
+        "carga_estimada": 20.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "INMACULADA CONCEPCION",
+        "n_estudiantes": 21,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 21
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 10.71,
+          "n": 21
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 21
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 39.29,
+          "n": 21
+        },
+        "carga_estimada": 18.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22595",
+        "n_estudiantes": 28,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 8.04,
+          "n": 28
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 31.25,
+          "n": 28
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 38.39,
+          "n": 28
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 22.32,
+          "n": 28
+        },
+        "carga_estimada": 17.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "SAN FRANCISCO DE ASIS",
+        "n_estudiantes": 20,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 20
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 20.0,
+          "n": 20
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 58.75,
+          "n": 20
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 21.25,
+          "n": 20
+        },
+        "carga_estimada": 16.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22119",
+        "n_estudiantes": 26,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 7.77,
+          "n": 26
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 32.04,
+          "n": 26
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.49,
+          "n": 26
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 9.71,
+          "n": 26
+        },
+        "carga_estimada": 15.7,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22153",
+        "n_estudiantes": 26,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 5.88,
+          "n": 26
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.24,
+          "n": 26
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 39.22,
+          "n": 26
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 16.67,
+          "n": 26
+        },
+        "carga_estimada": 14.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22586",
+        "n_estudiantes": 17,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 1.56,
+          "n": 17
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 14.06,
+          "n": 17
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 68.75,
+          "n": 17
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 15.62,
+          "n": 17
+        },
+        "carga_estimada": 14.3,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "SAN FELIPE",
+        "n_estudiantes": 15,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 15
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 16.67,
+          "n": 15
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 15
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 33.33,
+          "n": 15
+        },
+        "carga_estimada": 12.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22159",
+        "n_estudiantes": 24,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.42,
+          "n": 24
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.54,
+          "n": 24
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 39.58,
+          "n": 24
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 11.46,
+          "n": 24
+        },
+        "carga_estimada": 12.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "JUAN PABLO VIZCARDO Y GUZMAN",
+        "n_estudiantes": 18,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 18
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 34.78,
+          "n": 18
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 40.58,
+          "n": 18
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 24.64,
+          "n": 18
+        },
+        "carga_estimada": 11.7,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "INGAHUASI",
+        "n_estudiantes": 16,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 4.84,
+          "n": 16
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 22.58,
+          "n": 16
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 38.71,
+          "n": 16
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 33.87,
+          "n": 16
+        },
+        "carga_estimada": 11.6,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22122",
+        "n_estudiantes": 16,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 3.12,
+          "n": 16
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 26.56,
+          "n": 16
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 59.38,
+          "n": 16
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 10.94,
+          "n": 16
+        },
+        "carga_estimada": 11.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22149",
+        "n_estudiantes": 19,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 7.89,
+          "n": 19
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 34.21,
+          "n": 19
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 23.68,
+          "n": 19
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 34.21,
+          "n": 19
+        },
+        "carga_estimada": 11.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "PEDRO PABLO ATUSPARIA",
+        "n_estudiantes": 17,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 4.48,
+          "n": 17
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 31.34,
+          "n": 17
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 19.4,
+          "n": 17
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 44.78,
+          "n": 17
+        },
+        "carga_estimada": 10.9,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "SANTA ROSA",
+        "n_estudiantes": 12,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 12
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 12.5,
+          "n": 12
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 75.0,
+          "n": 12
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 12.5,
+          "n": 12
+        },
+        "carga_estimada": 10.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "MIGUEL GRAU SEMINARIO",
+        "n_estudiantes": 14,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 14
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 30.36,
+          "n": 14
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 57.14,
+          "n": 14
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 12.5,
+          "n": 14
+        },
+        "carga_estimada": 9.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "NINO JESUS",
+        "n_estudiantes": 16,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 16
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 40.62,
+          "n": 16
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 54.69,
+          "n": 16
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 4.69,
+          "n": 16
+        },
+        "carga_estimada": 9.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "ELEODORO BELLIDO BRAVO",
+        "n_estudiantes": 13,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 13
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 27.45,
+          "n": 13
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 66.67,
+          "n": 13
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 5.88,
+          "n": 13
+        },
+        "carga_estimada": 9.4,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "ANDRES AVELINO CACERES",
+        "n_estudiantes": 10,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 10
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 7.5,
+          "n": 10
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 42.5,
+          "n": 10
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 10
+        },
+        "carga_estimada": 9.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22087",
+        "n_estudiantes": 25,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 29.59,
+          "n": 25
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 38.78,
+          "n": 25
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 28.57,
+          "n": 25
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 3.06,
+          "n": 25
+        },
+        "carga_estimada": 7.9,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22223",
+        "n_estudiantes": 15,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 3.33,
+          "n": 15
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.0,
+          "n": 15
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 48.33,
+          "n": 15
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 3.33,
+          "n": 15
+        },
+        "carga_estimada": 7.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22085",
+        "n_estudiantes": 13,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 19.23,
+          "n": 13
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 13
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 44.23,
+          "n": 13
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 11.54,
+          "n": 13
+        },
+        "carga_estimada": 7.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22619",
+        "n_estudiantes": 8,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 8
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 9.38,
+          "n": 8
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 56.25,
+          "n": 8
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 34.38,
+          "n": 8
+        },
+        "carga_estimada": 7.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "CESAR VALLEJO",
+        "n_estudiantes": 9,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 9
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 19.44,
+          "n": 9
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 55.56,
+          "n": 9
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 9
+        },
+        "carga_estimada": 7.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22184 HERMINIA SANTE HUAROTO",
+        "n_estudiantes": 15,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 12.07,
+          "n": 15
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 43.1,
+          "n": 15
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 32.76,
+          "n": 15
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 12.07,
+          "n": 15
+        },
+        "carga_estimada": 6.7,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22191",
+        "n_estudiantes": 11,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 13.64,
+          "n": 11
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 27.27,
+          "n": 11
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 31.82,
+          "n": 11
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 27.27,
+          "n": 11
+        },
+        "carga_estimada": 6.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22217",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 7.14,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 64.29,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 28.57,
+          "n": 7
+        },
+        "carga_estimada": 6.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "36607",
+        "n_estudiantes": 15,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 15.0,
+          "n": 15
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 46.67,
+          "n": 15
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 33.33,
+          "n": 15
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 5.0,
+          "n": 15
+        },
+        "carga_estimada": 5.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "LIBERTADOR SIMON BOLIVAR",
+        "n_estudiantes": 11,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 2.27,
+          "n": 11
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.45,
+          "n": 11
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 11
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 2.27,
+          "n": 11
+        },
+        "carga_estimada": 5.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "JOSE MARIA ARGUEDAS",
+        "n_estudiantes": 12,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.87,
+          "n": 12
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 41.3,
+          "n": 12
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 34.78,
+          "n": 12
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 13.04,
+          "n": 12
+        },
+        "carga_estimada": 5.7,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22164",
+        "n_estudiantes": 20,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 14.1,
+          "n": 20
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 58.97,
+          "n": 20
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 19.23,
+          "n": 20
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 7.69,
+          "n": 20
+        },
+        "carga_estimada": 5.4,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22615",
+        "n_estudiantes": 15,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.0,
+          "n": 15
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 55.0,
+          "n": 15
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 21.67,
+          "n": 15
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 13.33,
+          "n": 15
+        },
+        "carga_estimada": 5.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22169",
+        "n_estudiantes": 10,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 17.95,
+          "n": 10
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 30.77,
+          "n": 10
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 35.9,
+          "n": 10
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 15.38,
+          "n": 10
+        },
+        "carga_estimada": 5.1,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22157",
+        "n_estudiantes": 20,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 17.5,
+          "n": 20
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 58.75,
+          "n": 20
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 22.5,
+          "n": 20
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 1.25,
+          "n": 20
+        },
+        "carga_estimada": 4.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22127",
+        "n_estudiantes": 12,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 16.67,
+          "n": 12
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 43.75,
+          "n": 12
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 39.58,
+          "n": 12
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 12
+        },
+        "carga_estimada": 4.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "MARCAS PAMPAPUQUIO",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 20.83,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 62.5,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 16.67,
+          "n": 6
+        },
+        "carga_estimada": 4.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "APOSTOL SANTIAGO",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 35.71,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 42.86,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 21.43,
+          "n": 7
+        },
+        "carga_estimada": 4.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22034",
+        "n_estudiantes": 10,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 12.5,
+          "n": 10
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.0,
+          "n": 10
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 22.5,
+          "n": 10
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 20.0,
+          "n": 10
+        },
+        "carga_estimada": 4.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "SANTA TERESITA",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 3.7,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 37.04,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 48.15,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 11.11,
+          "n": 7
+        },
+        "carga_estimada": 4.1,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22569",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 17.86,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 42.86,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 14.29,
+          "n": 7
+        },
+        "carga_estimada": 4.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22638",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 42.86,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 7.14,
+          "n": 7
+        },
+        "carga_estimada": 4.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22166",
+        "n_estudiantes": 12,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 12.5,
+          "n": 12
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 56.25,
+          "n": 12
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 27.08,
+          "n": 12
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 4.17,
+          "n": 12
+        },
+        "carga_estimada": 3.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "CELESTINO MANCHEGO MUNOZ",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 37.5,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 62.5,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "carga_estimada": 3.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "SANTA ROSA DE ACORA",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 60.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 15.0,
+          "n": 5
+        },
+        "carga_estimada": 3.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22118",
+        "n_estudiantes": 13,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 3.85,
+          "n": 13
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 67.31,
+          "n": 13
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 26.92,
+          "n": 13
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 1.92,
+          "n": 13
+        },
+        "carga_estimada": 3.7,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22018",
+        "n_estudiantes": 8,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 15.62,
+          "n": 8
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 40.62,
+          "n": 8
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 40.62,
+          "n": 8
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 3.12,
+          "n": 8
+        },
+        "carga_estimada": 3.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22614",
+        "n_estudiantes": 9,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 13.89,
+          "n": 9
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 47.22,
+          "n": 9
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 27.78,
+          "n": 9
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 11.11,
+          "n": 9
+        },
+        "carga_estimada": 3.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22490",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 4.17,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.83,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "carga_estimada": 3.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22165",
+        "n_estudiantes": 14,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 26.79,
+          "n": 14
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 53.57,
+          "n": 14
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 19.64,
+          "n": 14
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 14
+        },
+        "carga_estimada": 2.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22630",
+        "n_estudiantes": 8,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 18.75,
+          "n": 8
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 46.88,
+          "n": 8
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 28.12,
+          "n": 8
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 6.25,
+          "n": 8
+        },
+        "carga_estimada": 2.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22206",
+        "n_estudiantes": 4,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 2.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22572",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 2.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22004",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 29.17,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 29.17,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 33.33,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 8.33,
+          "n": 6
+        },
+        "carga_estimada": 2.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "36541",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 20.83,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 37.5,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 33.33,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 8.33,
+          "n": 6
+        },
+        "carga_estimada": 2.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "36597",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 12.5,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.83,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 37.5,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 4.17,
+          "n": 6
+        },
+        "carga_estimada": 2.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22168",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 8.33,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 41.67,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "carga_estimada": 2.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22503",
+        "n_estudiantes": 12,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 6.25,
+          "n": 12
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 72.92,
+          "n": 12
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 18.75,
+          "n": 12
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 2.08,
+          "n": 12
+        },
+        "carga_estimada": 2.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22211",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 5.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 45.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 5.0,
+          "n": 5
+        },
+        "carga_estimada": 2.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "36536",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 5.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 35.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 15.0,
+          "n": 5
+        },
+        "carga_estimada": 2.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22558",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 10.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 40.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 5.0,
+          "n": 5
+        },
+        "carga_estimada": 2.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22175",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 2.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22609",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 46.43,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 21.43,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 7.14,
+          "n": 7
+        },
+        "carga_estimada": 2.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22162",
+        "n_estudiantes": 4,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 2.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22029",
+        "n_estudiantes": 8,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 37.5,
+          "n": 8
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 40.62,
+          "n": 8
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 21.88,
+          "n": 8
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 8
+        },
+        "carga_estimada": 1.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22597",
+        "n_estudiantes": 10,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 17.5,
+          "n": 10
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 65.0,
+          "n": 10
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 7.5,
+          "n": 10
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 10.0,
+          "n": 10
+        },
+        "carga_estimada": 1.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22059",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22624",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 8.33,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 62.5,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 4.17,
+          "n": 6
+        },
+        "carga_estimada": 1.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22555",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36791",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36540",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 4.76,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 66.67,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 23.81,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 4.76,
+          "n": 6
+        },
+        "carga_estimada": 1.7,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22151",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 62.5,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 12.5,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "carga_estimada": 1.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22181",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 28.57,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 21.43,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 7
+        },
+        "carga_estimada": 1.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22209",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.4,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22202",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 35.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 40.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 20.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 5.0,
+          "n": 5
+        },
+        "carga_estimada": 1.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22160",
+        "n_estudiantes": 4,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22224",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 15.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 60.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 25.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 5
+        },
+        "carga_estimada": 1.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22215",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22621",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22167",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22647",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36537",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 1.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22648",
+        "n_estudiantes": 7,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 42.86,
+          "n": 7
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 46.43,
+          "n": 7
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 10.71,
+          "n": 7
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 7
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22060",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22025",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22629",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22117",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22142",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36539",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36795",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.8,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36809",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22203",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22129",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36599",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 37.5,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 54.17,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 8.33,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "36805",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22180",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22196",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22198",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22170",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22631",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.5,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22143",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22193",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 50.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 45.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 5.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 5
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22200",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22187",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22213",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22633",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22222",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22207",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22130",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22155",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22195",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22219",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36500",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.2,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22652",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36579",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22141",
+        "n_estudiantes": 5,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 65.0,
+          "n": 5
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 35.0,
+          "n": 5
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 5
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 5
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22550",
+        "n_estudiantes": 6,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 62.5,
+          "n": 6
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 37.5,
+          "n": 6
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 6
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22048",
+        "n_estudiantes": 8,
+        "satisfactorio": {
+          "estado": "publicado",
+          "pct": 56.25,
+          "n": 8
+        },
+        "proceso": {
+          "estado": "publicado",
+          "pct": 43.75,
+          "n": 8
+        },
+        "inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 8
+        },
+        "previo_al_inicio": {
+          "estado": "publicado",
+          "pct": 0.0,
+          "n": 8
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": true
+      },
+      {
+        "institucion": "22173",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22186",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36550",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22220",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22140",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22188",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22563",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22589",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22591",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22651",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22128",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22099",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22176",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22204",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": 0.0,
+        "base_suficiente": false
+      }
+    ]
+  }
+}
