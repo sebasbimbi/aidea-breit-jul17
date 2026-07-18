@@ -77,7 +77,7 @@ const PASOS = [
 export default function TourDemo() {
   const driverRef = useRef<DriverObj | null>(null);
   const arrancandoRef = useRef(false);
-  const avanzandoRef = useRef(false);
+  const ultimoAvanceRef = useRef(0);
 
   useEffect(() => {
     let vivo = true;
@@ -90,7 +90,7 @@ export default function TourDemo() {
       }
       driverRef.current = null;
       arrancandoRef.current = false;
-      avanzandoRef.current = false;
+      ultimoAvanceRef.current = 0;
     };
 
     const arrancar = async () => {
@@ -110,10 +110,27 @@ export default function TourDemo() {
           doneBtnText: "Cerrar",
           progressText: "{{current}} de {{total}}",
           steps: PASOS,
+          // driver.js autoenfoca el boton de cerrar al pintar cada popover. Con
+          // ese foco puesto, un Enter real del teclado va al boton y cierra el
+          // tour en vez de avanzar. Le sacamos el foco a cualquier boton del
+          // popover: asi Enter tiene un solo camino posible, nuestro handler de
+          // window, y no existe la carrera entre click nativo y moveNext.
+          onPopoverRender: () => {
+            // setTimeout y no rAF, por la misma razon que la guarda de Enter:
+            // rAF no corre con el pintado throttleado.
+            setTimeout(() => {
+              try {
+                const activo = document.activeElement as HTMLElement | null;
+                if (activo && activo.closest(".driver-popover")) activo.blur();
+              } catch {
+                /* sin foco que quitar */
+              }
+            });
+          },
           onDestroyed: () => {
             driverRef.current = null;
             arrancandoRef.current = false;
-            avanzandoRef.current = false;
+            ultimoAvanceRef.current = 0;
           },
         }) as unknown as DriverObj;
         driverRef.current = obj;
@@ -146,17 +163,20 @@ export default function TourDemo() {
         e.stopPropagation();
         // driver.js tambien liga Enter al boton enfocado del popover. Sin este
         // candado, un Enter avanzaria dos pasos de golpe.
-        if (avanzandoRef.current) return;
-        avanzandoRef.current = true;
+        //
+        // La guarda es por marca de tiempo a proposito. La version anterior
+        // liberaba el candado dentro de requestAnimationFrame, y rAF no corre
+        // cuando la pestana esta en segundo plano o el pintado esta throttleado:
+        // el candado quedaba trabado en true y Enter dejaba de avanzar despues
+        // del primer paso. Un umbral de tiempo no depende del ciclo de pintado.
+        const ahora = Date.now();
+        if (ahora - ultimoAvanceRef.current < 120) return;
+        ultimoAvanceRef.current = ahora;
         try {
           driverRef.current?.moveNext();
         } catch {
           limpiar();
         }
-        // se libera en el siguiente frame, despues de que driver procese su handler
-        requestAnimationFrame(() => {
-          avanzandoRef.current = false;
-        });
         return;
       }
 
