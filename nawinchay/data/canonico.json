@@ -19,7 +19,8 @@
       "huaytara": 237,
       "regional": 5002,
       "resto_regional": 4765,
-      "nota": "N_REGIONAL reconstruido exigiendo conteos enteros en los 20 items. Unico valor en el rango, residuo maximo 0.0025. Sobredeterminado, no circular."
+      "nota": "N_REGIONAL reconstruido exigiendo conteos enteros en los 20 items. Unico valor en el rango, residuo maximo 0.0025. Sobredeterminado, no circular.",
+      "disjuntas_por_construccion": "5002 regional = 237 de Huaytara + 4765 del resto, sin solapamiento. El resto se obtiene RESTANDO Huaytara del total regional, de modo que ningun estudiante puede estar en los dos grupos: no es un muestreo que pudiera solaparse, es una particion aritmetica. Lo mismo aplica a los aciertos de cada item: k_resto = k_regional menos k_huaytara."
     },
     "azar": {
       "valor": 25.0,
@@ -2752,42 +2753,6 @@
         "base_suficiente": true
       },
       {
-        "institucion": "22206",
-        "n_estudiantes": 4,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 2.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22572",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 2.8,
-        "base_suficiente": false
-      },
-      {
         "institucion": "22004",
         "n_estudiantes": 6,
         "satisfactorio": {
@@ -2996,24 +2961,6 @@
         "base_suficiente": true
       },
       {
-        "institucion": "22175",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 2.2,
-        "base_suficiente": false
-      },
-      {
         "institucion": "22609",
         "n_estudiantes": 7,
         "satisfactorio": {
@@ -3038,24 +2985,6 @@
         },
         "carga_estimada": 2.0,
         "base_suficiente": true
-      },
-      {
-        "institucion": "22162",
-        "n_estudiantes": 4,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 2.0,
-        "base_suficiente": false
       },
       {
         "institucion": "22029",
@@ -3110,24 +3039,6 @@
         "base_suficiente": true
       },
       {
-        "institucion": "22059",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.8,
-        "base_suficiente": false
-      },
-      {
         "institucion": "22624",
         "n_estudiantes": 6,
         "satisfactorio": {
@@ -3152,42 +3063,6 @@
         },
         "carga_estimada": 1.8,
         "base_suficiente": true
-      },
-      {
-        "institucion": "22555",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "36791",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.8,
-        "base_suficiente": false
       },
       {
         "institucion": "36540",
@@ -3268,24 +3143,6 @@
         "base_suficiente": true
       },
       {
-        "institucion": "22209",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.4,
-        "base_suficiente": false
-      },
-      {
         "institucion": "22202",
         "n_estudiantes": 5,
         "satisfactorio": {
@@ -3310,24 +3167,6 @@
         },
         "carga_estimada": 1.2,
         "base_suficiente": true
-      },
-      {
-        "institucion": "22160",
-        "n_estudiantes": 4,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.2,
-        "base_suficiente": false
       },
       {
         "institucion": "22224",
@@ -3356,96 +3195,6 @@
         "base_suficiente": true
       },
       {
-        "institucion": "22215",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.0,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22621",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.0,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22167",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.0,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22647",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.0,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "36537",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 1.0,
-        "base_suficiente": false
-      },
-      {
         "institucion": "22648",
         "n_estudiantes": 7,
         "satisfactorio": {
@@ -3470,186 +3219,6 @@
         },
         "carga_estimada": 0.8,
         "base_suficiente": true
-      },
-      {
-        "institucion": "22060",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22025",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22629",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22117",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22142",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "36539",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "36795",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.8,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "36809",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22203",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22129",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
       },
       {
         "institucion": "36599",
@@ -3678,132 +3247,6 @@
         "base_suficiente": true
       },
       {
-        "institucion": "36805",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22180",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22196",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22198",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22170",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22631",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.5,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22143",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
         "institucion": "22193",
         "n_estudiantes": 5,
         "satisfactorio": {
@@ -3830,25 +3273,7 @@
         "base_suficiente": true
       },
       {
-        "institucion": "22200",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22187",
+        "institucion": "22143",
         "n_estudiantes": 1,
         "satisfactorio": {
           "estado": "suprimido"
@@ -3862,169 +3287,7 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22213",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22633",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22222",
-        "n_estudiantes": 3,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22207",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22130",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22155",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22195",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "22219",
-        "n_estudiantes": 2,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
-        "base_suficiente": false
-      },
-      {
-        "institucion": "36500",
-        "n_estudiantes": 1,
-        "satisfactorio": {
-          "estado": "suprimido"
-        },
-        "proceso": {
-          "estado": "suprimido"
-        },
-        "inicio": {
-          "estado": "suprimido"
-        },
-        "previo_al_inicio": {
-          "estado": "suprimido"
-        },
-        "carga_estimada": 0.2,
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4042,7 +3305,7 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4060,7 +3323,7 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4116,6 +3379,24 @@
         "base_suficiente": true
       },
       {
+        "institucion": "36809",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
         "institucion": "22048",
         "n_estudiantes": 8,
         "satisfactorio": {
@@ -4156,7 +3437,7 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4174,7 +3455,25 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22203",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4192,7 +3491,25 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22129",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4210,7 +3527,61 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22060",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22200",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22160",
+        "n_estudiantes": 4,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4228,7 +3599,25 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22187",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4246,7 +3635,25 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22213",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4264,7 +3671,7 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4282,7 +3689,7 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4300,7 +3707,25 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22633",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4318,7 +3743,43 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36805",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22025",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4336,7 +3797,187 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22222",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22162",
+        "n_estudiantes": 4,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22180",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22196",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22198",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22207",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22215",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22621",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22629",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22059",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4354,7 +3995,133 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22117",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22130",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22142",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22155",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22167",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22170",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22175",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4372,7 +4139,25 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22195",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       },
       {
@@ -4390,7 +4175,223 @@
         "previo_al_inicio": {
           "estado": "suprimido"
         },
-        "carga_estimada": 0.0,
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22206",
+        "n_estudiantes": 4,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22209",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22219",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22555",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22572",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22631",
+        "n_estudiantes": 3,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "22647",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36500",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36537",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36539",
+        "n_estudiantes": 1,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36791",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
+        "base_suficiente": false
+      },
+      {
+        "institucion": "36795",
+        "n_estudiantes": 2,
+        "satisfactorio": {
+          "estado": "suprimido"
+        },
+        "proceso": {
+          "estado": "suprimido"
+        },
+        "inicio": {
+          "estado": "suprimido"
+        },
+        "previo_al_inicio": {
+          "estado": "suprimido"
+        },
+        "carga_estimada": null,
         "base_suficiente": false
       }
     ]

@@ -80,7 +80,13 @@ export type FilaAtisunchik = {
   proceso: Celda;
   inicio: Celda;
   previo_al_inicio: Celda;
-  carga_estimada: number;
+  /**
+   * `null` cuando la base no alcanza. Es OBLIGATORIO que sea nullable: carga es
+   * n por (inicio mas previo), asi que publicarla junto a un n visible permite
+   * despejar el porcentaje que la supresion acababa de ocultar. Un campo derivado
+   * de un dato suprimido hereda la supresion.
+   */
+  carga_estimada: number | null;
   base_suficiente: boolean;
 };
 

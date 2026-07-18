@@ -143,6 +143,12 @@ def construir_era():
             "resto_regional": N_RESTO,
             "nota": ("N_REGIONAL reconstruido exigiendo conteos enteros en los 20 items. "
                      "Unico valor en el rango, residuo maximo 0.0025. Sobredeterminado, no circular."),
+            "disjuntas_por_construccion": (
+                f"{N_REGIONAL} regional = {N_HUAYTARA} de Huaytara + {N_RESTO} del resto, "
+                "sin solapamiento. El resto se obtiene RESTANDO Huaytara del total regional, "
+                "de modo que ningun estudiante puede estar en los dos grupos: no es un muestreo "
+                "que pudiera solaparse, es una particion aritmetica. Lo mismo aplica a los "
+                "aciertos de cada item: k_resto = k_regional menos k_huaytara."),
         },
         "azar": {
             "valor": round(AZAR * 100, 2),
@@ -172,6 +178,17 @@ def celda(pct, n):
     return {"estado": "publicado", "pct": round(pct * 100, 2), "n": n}
 
 
+def carga(n, inicio, previo):
+    """FUGA CERRADA. carga = n * (inicio + previo), asi que publicarla junto a un n
+    visible permite despejar (inicio + previo) = carga / n y reconstruir exactamente
+    lo que la supresion acababa de ocultar. Con n=1 la aritmetica es trivial: una
+    carga de 1.0 dice que ese unico menor esta en inicio o en previo al inicio.
+    Un campo derivado de un dato suprimido hereda la supresion."""
+    if n < UMBRAL_SUPRESION:
+        return None
+    return round(n * (inicio + previo), 1)
+
+
 def construir_atisunchik():
     escuelas = []
     for r in leer("atisunchik_por_escuela.csv"):
@@ -187,7 +204,7 @@ def construir_atisunchik():
             "inicio": celda(inicio, n),
             "previo_al_inicio": celda(previo, n),
             # unidad: estudiante-equivalente. SIEMPRE "carga estimada de acompanamiento".
-            "carga_estimada": round(n * (inicio + previo), 1),
+            "carga_estimada": carga(n, inicio, previo),
             "base_suficiente": n >= UMBRAL_SUPRESION,
         })
 
@@ -203,7 +220,7 @@ def construir_atisunchik():
             "proceso": celda(float(r["pct_proceso"]), n),
             "inicio": celda(inicio, n),
             "previo_al_inicio": celda(previo, n),
-            "carga_estimada": round(n * (inicio + previo), 1),
+            "carga_estimada": carga(n, inicio, previo),
             "base_suficiente": n >= UMBRAL_SUPRESION,
         })
 
@@ -249,8 +266,8 @@ def construir_atisunchik():
         "carga_total_estimada": round(
             sum(e["n_estudiantes"] * (float(r["pct_inicio"] or 0) + float(r["pct_previo_al_inicio"] or 0))
                 for e, r in zip(escuelas, leer("atisunchik_por_escuela.csv"))), 1),
-        "distritos": sorted(distritos, key=lambda d: -d["carga_estimada"]),
-        "escuelas": sorted(escuelas, key=lambda e: -e["carga_estimada"]),
+        "distritos": sorted(distritos, key=lambda d: -(d["carga_estimada"] or -1)),
+        "escuelas": sorted(escuelas, key=lambda e: -(e["carga_estimada"] or -1)),
     }
 
 
@@ -287,6 +304,9 @@ def main():
     assert not any(c["estado"] == "publicado"
                    for esc in a["escuelas"] if esc["n_estudiantes"] < UMBRAL_SUPRESION
                    for c in (esc["satisfactorio"], esc["proceso"], esc["inicio"], esc["previo_al_inicio"]))
+
+    assert not any(e["carga_estimada"] is not None for e in a["escuelas"] if e["n_estudiantes"] < UMBRAL_SUPRESION), "fuga: carga publicada con base insuficiente"
+    assert not any(d["carga_estimada"] is not None for d in a["distritos"] if d["n_estudiantes"] < UMBRAL_SUPRESION)
 
     print(f"OK  {SALIDA.relative_to(RAIZ)}  {SALIDA.stat().st_size / 1024:.1f} KB")
     print(f"    era: 20 items | azar {e['azar']['valor']}% (alternativas SIN confirmar)")

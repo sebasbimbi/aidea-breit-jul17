@@ -31,7 +31,9 @@ function descargarCsv(filas: (Escuela | Distrito)[], nivel: Nivel) {
     const sat = esPublicable(f.satisfactorio) ? f.satisfactorio.pct.toFixed(1) : "";
     const prev = esPublicable(f.previo_al_inicio) ? f.previo_al_inicio.pct.toFixed(1) : "";
     const estado = f.base_suficiente ? "publicable" : "base insuficiente";
-    return [`"${nombre}"`, f.n_estudiantes, f.carga_estimada.toFixed(1), sat, prev, estado].join(",");
+    // carga tambien se suprime: dividida entre n reconstruye el porcentaje oculto
+    const cg = f.carga_estimada === null ? "" : f.carga_estimada.toFixed(1);
+    return [`"${nombre}"`, f.n_estudiantes, cg, sat, prev, estado].join(",");
   });
   const csv = [cab.join(","), ...cuerpo].join("\n");
   const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8;" }));
@@ -49,7 +51,7 @@ export default function Priorizacion() {
   const filas = useMemo(() => {
     const base: (Escuela | Distrito)[] = nivel === "distrito" ? A.distritos : A.escuelas;
     const copia = [...base];
-    if (orden === "carga") copia.sort((x, y) => y.carga_estimada - x.carga_estimada);
+    if (orden === "carga") copia.sort((x, y) => (y.carga_estimada ?? -1) - (x.carga_estimada ?? -1));
     if (orden === "n") copia.sort((x, y) => y.n_estudiantes - x.n_estudiantes);
     if (orden === "pct") {
       copia.sort((x, y) => {
@@ -63,7 +65,7 @@ export default function Priorizacion() {
 
   const top10 = filas.slice(0, 10);
   const nTop10 = top10.reduce((s, f) => s + f.n_estudiantes, 0);
-  const cargaTop10 = top10.reduce((s, f) => s + f.carga_estimada, 0);
+  const cargaTop10 = top10.reduce((s, f) => s + (f.carga_estimada ?? 0), 0);
 
   return (
     <main className="mx-auto max-w-6xl px-5 py-10">
@@ -188,7 +190,11 @@ export default function Priorizacion() {
                   </td>
                   <td className="px-4 py-2.5 text-right font-mono tabular-nums">{f.n_estudiantes}</td>
                   <td className="px-4 py-2.5 text-right font-mono tabular-nums">
-                    {f.carga_estimada.toFixed(1)}
+                    {f.carga_estimada === null ? (
+                      <span className="text-neutral-600">base insuficiente</span>
+                    ) : (
+                      f.carga_estimada.toFixed(1)
+                    )}
                   </td>
                   <td className="px-4 py-2.5 text-right font-mono text-xs tabular-nums">
                     {formatearCelda(f.satisfactorio)}
