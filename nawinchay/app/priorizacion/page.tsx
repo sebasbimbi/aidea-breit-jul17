@@ -47,14 +47,26 @@ function descargarCsv(filas: (Escuela | Distrito)[], nivel: Nivel) {
 
 export default function Priorizacion() {
   const [nivel, setNivel] = useState<Nivel>("distrito");
-  const [orden, setOrden] = useState<Orden>("carga");
+  // Por defecto tamano y no carga: a nivel distrito la carga no es publicable
+  // en ningun caso, asi que ordenar por ella no ordena nada.
+  const [orden, setOrden] = useState<Orden>("n");
+
+  // La carga estimada se calcula sobre porcentajes suprimidos, de modo que
+  // hereda la supresion. A nivel distrito eso la deja nula en los 16, y una
+  // columna que solo dice "base insuficiente" contradice en pantalla el mismo
+  // argumento de base minima que sostiene el producto. Se muestra unicamente
+  // donde tiene valores: por escuela.
+  const mostrarCarga = nivel === "escuela";
+  // Orden efectivo: si se pasa a distrito con "carga" seleccionada, cae a
+  // tamano. Derivarlo evita tener que sincronizar estado al cambiar de nivel.
+  const ordenEfectivo: Orden = !mostrarCarga && orden === "carga" ? "n" : orden;
 
   const filas = useMemo(() => {
     const base: (Escuela | Distrito)[] = nivel === "distrito" ? A.distritos : A.escuelas;
     const copia = [...base];
-    if (orden === "carga") copia.sort((x, y) => (y.carga_estimada ?? -1) - (x.carga_estimada ?? -1));
-    if (orden === "n") copia.sort((x, y) => y.n_estudiantes - x.n_estudiantes);
-    if (orden === "pct") {
+    if (ordenEfectivo === "carga") copia.sort((x, y) => (y.carga_estimada ?? -1) - (x.carga_estimada ?? -1));
+    if (ordenEfectivo === "n") copia.sort((x, y) => y.n_estudiantes - x.n_estudiantes);
+    if (ordenEfectivo === "pct") {
       copia.sort((x, y) => {
         const px = esPublicable(x.previo_al_inicio) ? x.previo_al_inicio.pct : -1;
         const py = esPublicable(y.previo_al_inicio) ? y.previo_al_inicio.pct : -1;
@@ -62,11 +74,14 @@ export default function Priorizacion() {
       });
     }
     return copia;
-  }, [nivel, orden]);
+  }, [nivel, ordenEfectivo]);
 
   const top10 = filas.slice(0, 10);
   const nTop10 = top10.reduce((s, f) => s + f.n_estudiantes, 0);
-  const cargaTop10 = top10.reduce((s, f) => s + (f.carga_estimada ?? 0), 0);
+  // Solo se suma lo que existe, y se cuenta cuantos entraron en la suma: sumar
+  // nulls como cero producia el "suman 0.0 de 828.4" que no significaba nada.
+  const conCarga = top10.filter((f) => f.carga_estimada !== null);
+  const cargaTop10 = conCarga.reduce((s, f) => s + (f.carga_estimada as number), 0);
 
   return (
     <main className="mx-auto max-w-6xl px-5 py-10">
@@ -112,16 +127,16 @@ export default function Priorizacion() {
         </div>
 
         <div className="flex rounded-md border border-brand-outline p-0.5">
-          {([
-            ["carga", "Carga"],
+          {(([
+            ...(mostrarCarga ? ([["carga", "Carga"]] as [Orden, string][]) : []),
             ["pct", "Porcentaje"],
             ["n", "Tamano"],
-          ] as [Orden, string][]).map(([o, etiqueta]) => (
+          ] as [Orden, string][])).map(([o, etiqueta]) => (
             <button
               key={o}
               onClick={() => setOrden(o)}
               className={`rounded px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition ${
-                orden === o ? "bg-white text-brand-ink" : "text-neutral-400 hover:text-white"
+                ordenEfectivo === o ? "bg-white text-brand-ink" : "text-neutral-400 hover:text-white"
               }`}
             >
               {etiqueta}
@@ -138,16 +153,31 @@ export default function Priorizacion() {
       </section>
 
       <p className="mt-3 text-xs leading-relaxed text-neutral-500">
-        {orden === "carga" && (
+        {ordenEfectivo === "carga" && (
           <>Orden por <strong className="text-neutral-300">carga estimada de acompanamiento</strong>, en
-          estudiante-equivalente: n por (inicio mas previo al inicio). Los 10 primeros suman{" "}
-          {cargaTop10.toFixed(1)} de {A.carga_total_estimada.toFixed(1)} de la carga estimada, sobre {nTop10} estudiantes.</>
+          estudiante-equivalente: n por (inicio mas previo al inicio).{" "}
+          {conCarga.length === 0 ? (
+            <>Ninguno de los 10 primeros tiene carga publicable, asi que no hay total que reportar.</>
+          ) : conCarga.length === top10.length ? (
+            <>Los 10 primeros suman {cargaTop10.toFixed(1)} de {A.carga_total_estimada.toFixed(1)} de la
+            carga estimada, sobre {nTop10} estudiantes.</>
+          ) : (
+            <>De los 10 primeros, {conCarga.length} tienen carga publicable y suman{" "}
+            {cargaTop10.toFixed(1)} de {A.carga_total_estimada.toFixed(1)} de la carga estimada. Los{" "}
+            {top10.length - conCarga.length} restantes quedan fuera del total porque su carga hereda la
+            supresion, no porque valgan cero.</>
+          )}</>
         )}
-        {orden === "pct" && (
+        {ordenEfectivo === "pct" && (
           <>Orden por porcentaje en previo al inicio. Con {A.base.escuelas_bajo_10} de {A.base.escuelas_total} escuelas
           bajo 10 estudiantes, ordenar por porcentaje corona ruido: mirar siempre la columna n.</>
         )}
-        {orden === "n" && (
+        {ordenEfectivo === "n" && !mostrarCarga && (
+          <>Orden por tamano crudo. A nivel distrito es el ordenamiento con base mas solida: la carga
+          estimada se calcula sobre porcentajes suprimidos, hereda esa supresion y no resulta
+          publicable en ningun distrito, de modo que no se muestra como columna.</>
+        )}
+        {ordenEfectivo === "n" && mostrarCarga && (
           <>Orden por tamano crudo. Sirve para ver que el top de carga tambien es el top de tamano,
           de modo que el argumento no dependa del denominador estimado.</>
         )}
@@ -159,7 +189,7 @@ export default function Priorizacion() {
             <tr className="font-mono text-[10px] uppercase tracking-widest text-neutral-500">
               <th className="px-4 py-3">{nivel === "distrito" ? "Distrito" : "Institucion educativa"}</th>
               <th className="px-4 py-3 text-right">n</th>
-              <th className="px-4 py-3 text-right">Carga estimada</th>
+              {mostrarCarga && <th className="px-4 py-3 text-right">Carga estimada</th>}
               <th className="px-4 py-3 text-right">Satisfactorio</th>
               <th className="px-4 py-3 text-right">Previo al inicio</th>
             </tr>
@@ -186,13 +216,15 @@ export default function Priorizacion() {
                     )}
                   </td>
                   <td className="px-4 py-2.5 text-right font-mono tabular-nums">{f.n_estudiantes}</td>
-                  <td className="px-4 py-2.5 text-right font-mono tabular-nums">
-                    {f.carga_estimada === null ? (
-                      <span className="text-neutral-600">base insuficiente</span>
-                    ) : (
-                      f.carga_estimada.toFixed(1)
-                    )}
-                  </td>
+                  {mostrarCarga && (
+                    <td className="px-4 py-2.5 text-right font-mono tabular-nums">
+                      {f.carga_estimada === null ? (
+                        <span className="text-neutral-600">base insuficiente</span>
+                      ) : (
+                        f.carga_estimada.toFixed(1)
+                      )}
+                    </td>
+                  )}
                   <td className="px-4 py-2.5 text-right font-mono text-xs tabular-nums">
                     {formatearCelda(f.satisfactorio)}
                   </td>
