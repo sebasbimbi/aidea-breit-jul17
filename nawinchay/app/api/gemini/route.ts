@@ -16,7 +16,12 @@ export const dynamic = "force-dynamic";
 // El cliente no elige el modelo. Si pudiera, este endpoint seria un proxy
 // abierto a cualquier ruta de la API de Google.
 const MODELO = "gemini-flash-latest";
-const MAX_BODY = 1_000_000; // 1 MB: las rubricas extraidas son texto, no binario
+// El tope existe para que esto no sea un buzon abierto, no para acotar rubricas.
+// Estaba en 1 MB y era demasiado justo: el CNEB tiene 224 paginas con capa de
+// texto, y una extraccion asi supera el millon de caracteres. Con el limite
+// viejo, el documento mas representativo del caso de uso habria dado 413
+// justo despues de que el usuario espero toda la extraccion.
+const MAX_BODY = 12_000_000;
 
 function mismoOrigen(req: Request): boolean {
   // Los navegadores actuales mandan Sec-Fetch-Site en toda peticion. Es la
