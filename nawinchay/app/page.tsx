@@ -1,6 +1,10 @@
+import NavBar from "@/components/NavBar";
+
 export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center gap-6 px-6 py-16">
+      <NavBar actual="/" />
+
       <p className="font-mono text-xs uppercase tracking-widest text-brand-green">
         AIdea x BREIT · DataEdHack · 18 jul 2026
       </p>

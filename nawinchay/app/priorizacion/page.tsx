@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import NavBar from "@/components/NavBar";
 import canonicoRaw from "@/data/canonico.json";
 import {
   formatearCelda,
@@ -69,11 +70,7 @@ export default function Priorizacion() {
 
   return (
     <main className="mx-auto max-w-6xl px-5 py-10">
-      <nav className="mb-8 flex gap-5 font-mono text-xs uppercase tracking-widest">
-        <a href="/" className="text-neutral-500 hover:text-white">Inicio</a>
-        <span className="text-brand-green">Priorizacion</span>
-        <a href="/items" className="text-neutral-500 hover:text-white">Items</a>
-      </nav>
+      <NavBar actual="/priorizacion" />
 
       <h1 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
         A donde va el acompanamiento
