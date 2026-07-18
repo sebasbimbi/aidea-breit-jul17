@@ -1,0 +1,48 @@
+{
+  "fuente": "Currículo Nacional de la Educación Básica - MINEDU, evaluación formativa y competencias matemáticas",
+  "reglas_generales": [
+    "Evaluar competencias mediante situaciones o problemas genuinos, retadores, significativos y alcanzables; no limitarse a memoria aislada",
+    "Relacionar cada pregunta con una competencia y con capacidades observables",
+    "Usar estándares de aprendizaje como referente del nivel esperado, sin inventar grado o ciclo cuando el documento fuente no lo indique",
+    "Hacer explícito el criterio evaluado y producir evidencia que permita observar la combinación pertinente de capacidades",
+    "Contextualizar las situaciones y evitar información decorativa que no intervenga en la resolución",
+    "Redactar enunciados claros, suficientes y sin ambigüedad; una sola respuesta inequívocamente correcta",
+    "Construir distractores plausibles a partir de errores frecuentes de procedimiento o comprensión, sin trucos gramaticales",
+    "Dar datos, unidades, fórmulas, gráficos o tablas completos y legibles cuando sean necesarios",
+    "La retroalimentación debe identificar el error probable, explicar el criterio y orientar cómo superarlo; no limitarse a decir correcto o incorrecto",
+    "Distribuir las respuestas correctas entre A, B, C y D y comprobar matemáticamente cada clave antes de devolverla"
+  ],
+  "matematica": {
+    "cantidad": [
+      "Traduce cantidades a expresiones numéricas",
+      "Comunica comprensión sobre números y operaciones",
+      "Usa estrategias y procedimientos de estimación y cálculo",
+      "Argumenta afirmaciones sobre relaciones numéricas y operaciones"
+    ],
+    "regularidad_equivalencia_cambio": [
+      "Traduce datos y condiciones a expresiones algebraicas y gráficas",
+      "Comunica comprensión sobre relaciones algebraicas",
+      "Usa estrategias y procedimientos para encontrar equivalencias y reglas generales",
+      "Argumenta afirmaciones sobre relaciones de cambio y equivalencia"
+    ],
+    "forma_movimiento_localizacion": [
+      "Modela objetos con formas geométricas y sus transformaciones",
+      "Comunica comprensión sobre formas y relaciones geométricas",
+      "Usa estrategias y procedimientos para orientarse en el espacio",
+      "Argumenta afirmaciones sobre relaciones geométricas"
+    ],
+    "gestion_datos_incertidumbre": [
+      "Representa datos con gráficos y medidas estadísticas o probabilísticas",
+      "Comunica comprensión de conceptos estadísticos y probabilísticos",
+      "Usa estrategias y procedimientos para recopilar y procesar datos",
+      "Sustenta conclusiones o decisiones con la información obtenida"
+    ]
+  },
+  "formato": {
+    "enunciado": "Situación breve seguida de una pregunta directa",
+    "formula": "LaTeX sin delimitadores; nunca escribir $...$ en enunciados o alternativas",
+    "alternativas": "Texto plano y símbolos Unicode legibles; exactamente cuatro opciones",
+    "tabla": "Primera fila como encabezado, unidades visibles, celdas compactas, sin filas vacías",
+    "salida": "JSON estructurado y compacto"
+  }
+}
