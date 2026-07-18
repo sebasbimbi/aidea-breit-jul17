@@ -39,6 +39,57 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
   req.query = Object.fromEntries(url.searchParams.entries());
 
+  // Proxy de Gemini: la clave sale de GOOGLE_API_KEY (el .env local, o
+  // docker run --env-file .env) y nunca viaja al navegador. Es el equivalente,
+  // para este servidor, de lo que hace app/api/gemini en el sitio desplegado.
+  if (url.pathname === "/api/gemini") {
+    if (req.method !== "POST") {
+      res.statusCode = 405;
+      return res.end(JSON.stringify({ error: { message: "Usa POST." } }));
+    }
+    const clave = process.env.GOOGLE_API_KEY;
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
+    if (!clave) {
+      res.statusCode = 503;
+      return res.end(
+        JSON.stringify({
+          error: { message: "Falta GOOGLE_API_KEY en el entorno del servidor." },
+        })
+      );
+    }
+    const trozos = [];
+    for await (const trozo of req) trozos.push(trozo);
+    let cuerpo;
+    try {
+      cuerpo = JSON.parse(Buffer.concat(trozos).toString("utf8") || "{}");
+    } catch {
+      res.statusCode = 400;
+      return res.end(JSON.stringify({ error: { message: "JSON invalido." } }));
+    }
+    try {
+      // El modelo lo fija el servidor: si lo eligiera el cliente, esto seria un
+      // proxy abierto a cualquier ruta de la API de Google.
+      const upstream = await fetch(
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": clave },
+          body: JSON.stringify({
+            contents: cuerpo.contents,
+            generationConfig: cuerpo.generationConfig,
+          }),
+        }
+      );
+      res.statusCode = upstream.status;
+      return res.end(await upstream.text());
+    } catch {
+      res.statusCode = 502;
+      return res.end(
+        JSON.stringify({ error: { message: "No se pudo contactar a la API de Gemini." } })
+      );
+    }
+  }
+
   if (url.pathname === "/api/history") {
     const origin = req.headers.origin || "";
     if (!origin || origin === "null" || /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) {
