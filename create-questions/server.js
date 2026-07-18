@@ -5,6 +5,11 @@ const historyHandler = require("./api/history.js");
 
 const ROOT = __dirname;
 const PORT = Number(process.env.PORT || 8765);
+// Por defecto sigue siendo 127.0.0.1, igual que antes: en local no cambia nada.
+// Dentro de un contenedor hay que escuchar en 0.0.0.0, porque 127.0.0.1 es la
+// loopback del propio contenedor y el proceso quedaria inalcanzable desde el
+// host aunque se publique el puerto. El Dockerfile setea HOST=0.0.0.0.
+const HOST = process.env.HOST || "127.0.0.1";
 
 function loadEnv() {
   const envPath = path.join(ROOT, ".env");
@@ -73,6 +78,6 @@ const server = http.createServer(async (req, res) => {
   fs.createReadStream(filePath).pipe(res);
 });
 
-server.listen(PORT, "127.0.0.1", () => {
-  console.log(`Rúbrica Quiz disponible en http://127.0.0.1:${PORT}`);
+server.listen(PORT, HOST, () => {
+  console.log(`Rúbrica Quiz disponible en http://${HOST}:${PORT}`);
 });

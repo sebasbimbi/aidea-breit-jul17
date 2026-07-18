@@ -1,0 +1,15 @@
+# El PDF del CNEB pesa 12.4 MB y la app nunca lo pide: solo consume
+# Validaciones/cneb-reglas.json. Fuera de la imagen.
+Validaciones/*.pdf
+
+# Nunca hornear secretos en la imagen. Las credenciales entran por
+# variables de entorno en tiempo de ejecucion (docker run -e / --env-file).
+.env
+
+node_modules
+npm-debug.log*
+
+# insumos de trabajo, no hacen falta para servir la app
+Data/
+.git
+.DS_Store
