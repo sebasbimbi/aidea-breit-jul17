@@ -59,6 +59,8 @@
     .option-edit .option{color:#9ca3af;border-color:#30463C}
     .drop{border-color:#30463C}
     .drop:hover,.drop.ready{border-color:#27F3A9;background:rgba(39,243,169,.06)}
+    .drop.dragging{border-style:solid;border-color:#27F3A9;background:rgba(39,243,169,.14)}
+    .drop.dragging *{pointer-events:none}
     .rubric{border-color:#30463C}
     .rubric pre{background:#111;color:#c9d1cd}
     .card{background:#111;border-color:#30463C}
@@ -93,7 +95,7 @@
   <main class="workspace">
     <form class="controls" id="form">
       <div class="label"><span>01</span> Configuración</div>
-      <label class="drop" id="drop" for="file" role="button" tabindex="0"><span class="pdf" id="fileType">DOC</span><strong id="fileName">Seleccionar rúbrica</strong><small id="fileMeta">Word, PDF o Excel (todas las hojas) · máximo 12 MB</small></label>
+      <label class="drop" id="drop" for="file" role="button" tabindex="0"><span class="pdf" id="fileType">DOC</span><strong id="fileName">Arrastra o selecciona la rúbrica</strong><small id="fileMeta">Word, PDF o Excel (todas las hojas) · máximo 12 MB</small></label>
       <input id="file" type="file" accept="application/pdf,.pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.docx,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.xls,.xlsx" class="file-input">
       <label class="field" for="evaluationContext"><span>Contexto de la evaluación <small>(opcional)</small></span><textarea id="evaluationContext" placeholder="Ejemplo: estudiantes de 5.º de primaria de una comunidad rural de Cusco; usar situaciones relacionadas con agricultura, clima y comercio local."></textarea><small class="hint">Puedes indicar lugar, grado, institución, realidad local o situaciones que deberían aparecer en las preguntas.</small></label>
       <div class="key-field" id="keyField"><label for="apiKey">Clave de Gemini</label><input id="apiKey" type="password" autocomplete="off" placeholder="Pega aquí tu API key de Gemini"><div class="key-actions"><button class="key-action" id="toggleKey" type="button">Ver clave</button><button class="key-action" id="saveKey" type="button">Guardar clave</button></div><small>Se guarda solo en este navegador para generar preguntas con Gemini directamente desde el HTML.</small></div>
@@ -131,7 +133,18 @@
     $("editKey").onclick=()=>{setKeyEditor(true);$("apiKey").type="text";$("toggleKey").textContent="Ocultar clave";$("apiKey").focus()};
     setKeyEditor(!sessionApiKey);
     $("drop").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();$("file").click()}};
-    $("file").onchange=e=>{selectedFile=e.target.files[0]||null;if(!selectedFile)return;const extension=selectedFile.name.split(".").pop().toUpperCase();$("fileType").textContent=extension;$("fileName").textContent=`✓ Rúbrica seleccionada: ${selectedFile.name}`;$("fileMeta").textContent=`${(selectedFile.size/1048576).toFixed(2)} MB · Haz clic para cambiarla`;$("drop").classList.add("ready");status("La rúbrica está lista. Presiona Generar preguntas.","ok")};
+    const ACCEPTED=["pdf","docx","xlsx","xls"];
+    function acceptFile(file){if(!file)return;const extension=file.name.split(".").pop().toLowerCase();// Un archivo rechazado no descarta el que ya estaba aceptado: solo avisa.
+if(!ACCEPTED.includes(extension))return status(`«${file.name}» no es compatible. Usa PDF, Word .docx o Excel .xlsx/.xls.`,"error");if(file.size>12*1048576)return status(`«${file.name}» pesa ${(file.size/1048576).toFixed(2)} MB y el límite es 12 MB.`,"error");selectedFile=file;$("fileType").textContent=extension.toUpperCase();$("fileName").textContent=`✓ Rúbrica seleccionada: ${file.name}`;$("fileMeta").textContent=`${(file.size/1048576).toFixed(2)} MB · Haz clic o arrastra otra para cambiarla`;$("drop").classList.add("ready");status("La rúbrica está lista. Presiona Generar preguntas.","ok")}
+    $("file").onchange=e=>acceptFile(e.target.files[0]||null);
+    // Arrastrar y soltar. El recuadro punteado siempre pareció una zona de drop pero
+    // no escuchaba nada: el archivo se soltaba, no pasaba nada y el usuario recibía
+    // «Selecciona una rúbrica» al generar. Peor aún, sin preventDefault el navegador
+    // abre el PDF en la pestaña y se pierde el trabajo en pantalla.
+    ["dragenter","dragover"].forEach(type=>$("drop").addEventListener(type,e=>{e.preventDefault();e.dataTransfer.dropEffect="copy";$("drop").classList.add("dragging")}));
+    ["dragleave","dragend"].forEach(type=>$("drop").addEventListener(type,()=>$("drop").classList.remove("dragging")));
+    $("drop").addEventListener("drop",e=>{e.preventDefault();$("drop").classList.remove("dragging");const file=e.dataTransfer?.files?.[0];if(!file)return status("No se recibió ningún archivo. Intenta hacer clic para seleccionarlo.","error");const transfer=new DataTransfer();transfer.items.add(file);$("file").files=transfer.files;acceptFile(file)});
+    ["dragover","drop"].forEach(type=>window.addEventListener(type,e=>{if(!$("drop").contains(e.target))e.preventDefault()}));
     async function extractPdf(file){const data=new Uint8Array(await file.arrayBuffer());const pdf=await pdfjsLib.getDocument({data}).promise;const pages=[];for(let n=1;n<=pdf.numPages;n++){status(`Extrayendo texto: página ${n} de ${pdf.numPages}…`);const page=await pdf.getPage(n);const content=await page.getTextContent();pages.push(content.items.map(i=>i.str).join(" "))}return pages.join("\n\n").trim()}
     async function extractWord(file){if(!window.mammoth)throw new Error("No se pudo cargar el lector de Word. Revisa tu conexión.");status("Extrayendo texto del documento Word…");const result=await window.mammoth.extractRawText({arrayBuffer:await file.arrayBuffer()});return String(result.value||"").trim()}
     async function extractExcel(file){if(!window.XLSX)throw new Error("No se pudo cargar el lector de Excel. Revisa tu conexión.");const workbook=window.XLSX.read(await file.arrayBuffer(),{type:"array"});const sheets=[];for(let index=0;index<workbook.SheetNames.length;index++){const name=workbook.SheetNames[index];status(`Extrayendo hoja ${index+1} de ${workbook.SheetNames.length}: ${name}…`);const csv=window.XLSX.utils.sheet_to_csv(workbook.Sheets[name],{blankrows:false});if(csv.trim())sheets.push(`HOJA ${index+1}: ${name}\n${csv}`)}return sheets.join("\n\n").trim()}
